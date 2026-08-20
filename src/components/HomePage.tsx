@@ -29,16 +29,16 @@ export async function HomePage({ locale }: { locale: string }) {
       <section className="hero">
         <div className="hero-cloud cloud-one" /><div className="hero-cloud cloud-two" />
         <div className="shell hero-inner">
-          <div className="hero-copy">
+          <Reveal className="hero-copy">
             <p className="eyebrow">{t("eyebrow")}</p>
             <h1>{t("heroTitle")}</h1>
             <p className="hero-summary">{cmsHome?.description ?? t("heroText")}</p>
             <SearchComposer placeholder={t("searchPlaceholder")} action={t("searchAction")} />
-          </div>
-          <div className="artifact-stage" aria-hidden="true">
+          </Reveal>
+          <Reveal className="artifact-stage" delay={0.12} ariaHidden>
             {(t.raw("artifacts") as string[]).map((artifact, index) => <div key={artifact} className={`artifact artifact-${index + 1}`}>{index === 2 && <Headphones />}{artifact}</div>)}
             <div className="hero-orbit"><Sparkles /></div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -53,11 +53,11 @@ export async function HomePage({ locale }: { locale: string }) {
 
       <section className="section fog-section">
         <div className="shell split-feature">
-          <Reveal direction="left" className="dialogue-board">
+          <Reveal className="dialogue-board">
             <div className="dialogue-top"><span>{t("dialogueLabel")}</span><button type="button" aria-label="Play"><Play /></button></div>
             <p className="hangul">{t("dialogueKo")}</p><p className="meaning">{t("dialogueMeaning")}</p><div className="lesson-note"><MessageCircle /><p>{t("dialogueNote")}</p></div>
           </Reveal>
-          <Reveal direction="right" className="feature-copy"><p className="eyebrow dark">{t("practicalEyebrow")}</p><h2>{t("practicalTitle")}</h2><p>{t("practicalText")}</p><Link href="/learn/conversation" className="text-link">{common("explore")}<ArrowRight /></Link></Reveal>
+          <Reveal delay={0.1} className="feature-copy"><p className="eyebrow dark">{t("practicalEyebrow")}</p><h2>{t("practicalTitle")}</h2><p>{t("practicalText")}</p><Link href="/learn/conversation" className="text-link">{common("explore")}<ArrowRight /></Link></Reveal>
         </div>
       </section>
 
@@ -72,8 +72,8 @@ export async function HomePage({ locale }: { locale: string }) {
 
       <section className="section assessment-section">
         <div className="shell assessment-grid">
-          <Reveal direction="left"><p className="eyebrow peach">{t("assessmentEyebrow")}</p><h2>{t("assessmentTitle")}</h2><p>{t("assessmentText")}</p><Link href="/learn" className="pill-button light">{t("assessmentCta")}<ArrowRight /></Link></Reveal>
-          <Reveal direction="right" className="assessment-card"><div className="assessment-time"><span>15-20</span><small>{common("minutes")}</small></div>{(t.raw("assessmentPoints") as string[]).map((point) => <p key={point}><Check />{point}</p>)}</Reveal>
+          <Reveal><p className="eyebrow peach">{t("assessmentEyebrow")}</p><h2>{t("assessmentTitle")}</h2><p>{t("assessmentText")}</p><Link href="/learn" className="pill-button light">{t("assessmentCta")}<ArrowRight /></Link></Reveal>
+          <Reveal delay={0.1} className="assessment-card"><div className="assessment-time"><span>15-20</span><small>{common("minutes")}</small></div>{(t.raw("assessmentPoints") as string[]).map((point) => <p key={point}><Check />{point}</p>)}</Reveal>
         </div>
       </section>
 
@@ -86,8 +86,8 @@ export async function HomePage({ locale }: { locale: string }) {
 
       <section className="section real-life-section">
         <div className="shell real-life-grid">
-          <Reveal direction="left" className="real-visual"><div className="window-card"><div className="window-sky" /><div className="window-table"><span>안녕하세요</span></div></div></Reveal>
-          <Reveal direction="right" className="feature-copy"><p className="eyebrow dark">{t("realEyebrow")}</p><h2>{t("realTitle")}</h2><p>{t("realText")}</p><div className="place-list">{(t.raw("realPlaces") as string[]).map((place) => <span key={place}>{place}</span>)}</div></Reveal>
+          <Reveal className="real-visual"><div className="window-card"><div className="window-sky" /><div className="window-table"><span>안녕하세요</span></div></div></Reveal>
+          <Reveal delay={0.1} className="feature-copy"><p className="eyebrow dark">{t("realEyebrow")}</p><h2>{t("realTitle")}</h2><p>{t("realText")}</p><div className="place-list">{(t.raw("realPlaces") as string[]).map((place) => <span key={place}>{place}</span>)}</div></Reveal>
         </div>
       </section>
 

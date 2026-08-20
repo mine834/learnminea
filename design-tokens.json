@@ -122,7 +122,7 @@
       "magnetic": { "type": "spring", "stiffness": 260, "damping": 20 }
     },
     "variants": {
-      "fadeUp": { "hidden": { "opacity": 0, "y": 28 }, "visible": { "opacity": 1, "y": 0 } },
+      "fadeUp": { "hidden": { "opacity": 0, "y": 40 }, "visible": { "opacity": 1, "y": 0 } },
       "fadeIn": { "hidden": { "opacity": 0 }, "visible": { "opacity": 1 } },
       "fadeDown": { "hidden": { "opacity": 0, "y": -18 }, "visible": { "opacity": 1, "y": 0 } },
       "slideRight": { "hidden": { "opacity": 0, "x": -32 }, "visible": { "opacity": 1, "x": 0 } },
