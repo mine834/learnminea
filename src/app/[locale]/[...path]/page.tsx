@@ -8,6 +8,7 @@ import { getCmsPages, getCmsPosts } from "@/lib/cms";
 import { Reveal } from "@/components/motion/Reveal";
 import { SimpleForm } from "@/components/SimpleForm";
 import { CartPanel } from "@/components/CartPanel";
+import { TopikRegistration, type TopikRegistrationLabels } from "@/components/TopikRegistration";
 import type { Product } from "@/components/HomePage";
 
 const staticPaths = [
@@ -81,6 +82,7 @@ export default async function RoutePage({ params }: { params: Promise<{ locale: 
 
   if (key === "learn") return <LearnPage content={content} course={pagesT.raw("learnCourse") as CourseCta} />;
   if (key === "vocabulary" || key === "grammar" || key === "conversation") return <StandardPage content={content}><LearningBookGrid books={learningBooks[key]} digital={commonT("digital")} /></StandardPage>;
+  if (key === "topik") return <StandardPage content={content}><div className="content-list">{content.items.map((item, index) => <Reveal key={item} delay={index * 0.08}><div><span>0{index + 1}</span><h2>{item}</h2><ArrowRight /></div></Reveal>)}</div><Reveal><TopikRegistration labels={pagesT.raw("topikRegistration") as TopikRegistrationLabels} /></Reveal></StandardPage>;
   if (key === "shop") return <ShopPage content={content} products={products} digital={commonT("digital")} />;
   if (key === "cart") return <StandardPage content={content}><CartPanel title={content.items[0] ?? ""} labels={{ continue: commonT("continue"), workbook: commonT("workbook"), decrease: commonT("decrease"), increase: commonT("increase") }} /></StandardPage>;
   if (key === "login" || key === "signup" || key === "contact") return <StandardPage content={content}><SimpleForm kind={key} labels={labels} /></StandardPage>;

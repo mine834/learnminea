@@ -238,6 +238,19 @@ h3, p { margin-top: 0; }
 .learning-book h2 { font-size: 28px; line-height: 1.08; }
 .learning-book p { margin: 12px 0 20px; font-size: 13px; opacity: .76; }
 .learning-book small { margin-top: auto; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
+.topik-registration { margin-top: 48px; padding: 34px; border-radius: var(--radius-xl); background: var(--ink); color: var(--paper); }
+.topik-registration-copy { display: flex; align-items: start; gap: 18px; margin-bottom: 28px; }
+.topik-registration-copy > svg { width: 46px; height: 46px; flex: 0 0 auto; padding: 11px; border-radius: 50%; background: color-mix(in srgb, var(--paper) 9%, transparent); color: var(--sky-end); }
+.topik-registration h2 { font-size: 34px; }
+.topik-registration p { margin: 8px 0 0; color: var(--smoke); }
+.topik-registration .pill-button svg { transition: transform 160ms var(--ease); }
+.topik-registration .pill-button svg.rotated { transform: rotate(180deg); }
+.topik-registration-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+.topik-registration-options a { min-height: 108px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; padding: 20px; border: 1px solid color-mix(in srgb, var(--paper) 14%, transparent); border-radius: var(--radius-md); background: color-mix(in srgb, var(--paper) 6%, transparent); transition: border-color 160ms var(--ease), transform 160ms var(--ease); }
+.topik-registration-options a:hover { border-color: var(--sky-end); transform: translateY(-2px); }
+.topik-registration-options a > svg { width: 20px; color: var(--sky-end); }
+.topik-registration-options strong, .topik-registration-options span { display: block; }
+.topik-registration-options span { margin-top: 3px; color: var(--smoke); font-size: 12px; }
 .simple-form { display: grid; gap: 18px; max-width: 620px; padding: 32px; border: 1px solid var(--hairline); border-radius: var(--radius-xl); background: var(--fog); }
 .simple-form label { display: grid; gap: 8px; color: var(--slate); font-size: 13px; }
 .simple-form input, .simple-form textarea { width: 100%; min-height: 52px; padding: 12px 15px; border: 1px solid var(--hairline); border-radius: var(--radius-sm); background: var(--paper); color: var(--ink); outline: 0; }
@@ -314,7 +327,7 @@ h3, p { margin-top: 0; }
   .artifact { min-width: 118px; padding: 13px 16px; font-size: 17px; }
   .artifact-1 { top: 14px; left: 1%; }.artifact-2 { top: 20px; right: 1%; }.artifact-3 { bottom: 25px; left: 5%; }.artifact-4 { right: 2%; bottom: 10px; }
   .hero-orbit { width: 48px; height: 48px; }
-  .section-heading.wide, .split-feature, .assessment-grid, .why-grid, .real-life-grid, .faq-grid, .product-detail-grid, .checkout-grid, .reviews-grid, .learning-books, .learn-category-grid, .course-cta { grid-template-columns: 1fr; }
+  .section-heading.wide, .split-feature, .assessment-grid, .why-grid, .real-life-grid, .faq-grid, .product-detail-grid, .checkout-grid, .reviews-grid, .learning-books, .learn-category-grid, .course-cta, .topik-registration-options { grid-template-columns: 1fr; }
   .section-heading.wide, .split-feature, .assessment-grid, .why-grid, .real-life-grid, .faq-grid, .product-detail-grid { gap: 42px; }
   .section-heading h2, .feature-copy h2, .why-intro h2, .faq-grid > div > h2 { font-size: 42px; }
   .category-grid { grid-template-columns: 1fr; }

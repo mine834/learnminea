@@ -55,6 +55,7 @@
   "pages": {
     "learn": { "eyebrow": "LEARNING LIBRARY", "title": "Learn one useful thing today", "text": "Choose a short lesson in vocabulary, grammar, conversation, or K-Drama.", "items": ["Vocabulary", "Grammar", "Conversation", "K-Drama expressions"] },
     "learnCourse": { "title": "Register for an online course", "text": "Level-based online courses with teacher guidance will open for registration soon.", "button": "Register", "pending": "Registration link coming soon" },
+    "topikRegistration": { "title": "Register for the TOPIK exam", "text": "Choose where you will take the exam to continue to the official registration site.", "button": "Register for TOPIK", "korea": "Register in Korea", "koreaNote": "Official TOPIK website", "mongolia": "Register in Mongolia", "mongoliaNote": "TOPIK registration in Mongolia" },
     "learningBooks": {
       "vocabulary": [{ "title": "1,000 beginner words", "level": "Elementary", "text": "Core everyday words, example sentences, and review exercises.", "slug": "beginner-1000-words" }],
       "grammar": [
