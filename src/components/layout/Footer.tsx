@@ -16,10 +16,9 @@ export async function Footer({ locale }: { locale: string }) {
   return (
     <footer className="footer">
       <div className="shell footer-grid">
-        <div><Link href="/" className="wordmark footer-mark">learnminea<span>.</span></Link><p>{t("tagline")}</p></div>
+        <div><Link href="/" className="wordmark footer-mark">learnminea<span>.</span></Link><p>{t("tagline")}</p><div className="social-links">{socials.map(({ label, href, icon: Icon }) => <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}><Icon aria-hidden="true" /></a>)}</div></div>
         <div><h2>{t("learn")}</h2><Link href="/learn">{nav("learn")}</Link><Link href="/topik">{nav("topik")}</Link><Link href="/shop">{nav("shop")}</Link></div>
         <div><h2>{t("company")}</h2>{cmsLinks.length ? cmsLinks.map((item) => <Link key={item._id} href={item.url === "/faq" ? "/#faq" : item.url ?? "/"}>{item.label}</Link>) : <><Link href="/about">{t("about")}</Link><Link href="/contact">{t("contact")}</Link><Link href="/#faq">{t("faq")}</Link></>}</div>
-        <div><h2>{t("social")}</h2><div className="social-links">{socials.map(({ label, href, icon: Icon }) => <a key={label} href={href} target="_blank" rel="noreferrer"><Icon aria-hidden="true" />{label}</a>)}</div></div>
       </div>
       <div className="shell footer-bottom"><span>© {new Date().getFullYear()} LearnMinea. {t("rights")}</span><span>{t("note")}</span></div>
     </footer>
