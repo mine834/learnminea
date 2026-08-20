@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_KR, Noto_Serif_KR } from "next/font/google";
+import { Noto_Sans_KR, Nunito } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import ApolloClientProvider from "@/lib/apollo/provider";
@@ -10,14 +10,14 @@ import { routing } from "@/i18n/routing";
 import "../globals.css";
 
 const notoSans = Noto_Sans_KR({
-  variable: "--font-ui",
-  weight: ["400", "500"],
+  variable: "--font-korean",
+  weight: ["400", "500", "700", "900"],
   subsets: ["latin", "cyrillic"],
 });
 
-const notoSerif = Noto_Serif_KR({
-  variable: "--font-display",
-  weight: ["400"],
+const nunito = Nunito({
+  variable: "--font-rounded",
+  weight: ["500", "700", "800", "900"],
   subsets: ["latin", "cyrillic"],
 });
 
@@ -42,7 +42,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${notoSans.variable} ${notoSerif.variable} h-full antialiased`}
+      className={`${notoSans.variable} ${nunito.variable} h-full antialiased`}
     >
       <body>
         <NextIntlClientProvider messages={messages}>
