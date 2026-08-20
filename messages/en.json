@@ -37,6 +37,12 @@
     ],
     "realEyebrow": "REAL LIFE, REAL LANGUAGE", "realTitle": "Language that works beyond the lesson", "realText": "Cafes, school, work, public transport, and everyday meetings. Lessons begin with moments where you need the language.",
     "realPlaces": ["Cafe", "School", "Work", "Transport", "Everyday life"],
+    "reviewsEyebrow": "LEARNER REVIEWS", "reviewsTitle": "How learners use LearnMinea",
+    "reviews": [
+      { "quote": "The explanations are concise and the examples are immediately useful. It fits perfectly into a short daily routine.", "name": "Nomin", "detail": "Beginner learner" },
+      { "quote": "Organizing my TOPIK vocabulary and study order made preparation feel much more manageable.", "name": "Temuulen", "detail": "TOPIK learner" },
+      { "quote": "I especially like understanding the tone of K-Drama expressions through clear Mongolian explanations.", "name": "Saruul", "detail": "Independent learner" }
+    ],
     "faqTitle": "Common questions",
     "faqs": [
       { "question": "Can I start as a complete beginner?", "answer": "Yes. Follow a clear sequence from Hangul through core words and short grammar explanations." },
@@ -48,6 +54,20 @@
   },
   "pages": {
     "learn": { "eyebrow": "LEARNING LIBRARY", "title": "Learn one useful thing today", "text": "Choose a short lesson in vocabulary, grammar, conversation, or K-Drama.", "items": ["Vocabulary", "Grammar", "Conversation", "K-Drama expressions"] },
+    "learnCourse": { "title": "Register for an online course", "text": "Level-based online courses with teacher guidance will open for registration soon.", "button": "Register", "pending": "Registration link coming soon" },
+    "learningBooks": {
+      "vocabulary": [{ "title": "1,000 beginner words", "level": "Elementary", "text": "Core everyday words, example sentences, and review exercises.", "slug": "beginner-1000-words" }],
+      "grammar": [
+        { "title": "Korean Grammar", "level": "Elementary", "text": "Core sentence patterns, particles, and everyday grammar." },
+        { "title": "Korean Grammar", "level": "Intermediate", "text": "Connectors, nuance, and longer sentence structures." },
+        { "title": "Korean Grammar", "level": "Advanced", "text": "Subtle meaning, formal language, and written usage." }
+      ],
+      "conversation": [
+        { "title": "Korean Conversation", "level": "Elementary", "text": "Greetings, cafes, shopping, and short everyday exchanges." },
+        { "title": "Korean Conversation", "level": "Intermediate", "text": "Express ideas at school, work, and while traveling." },
+        { "title": "Korean Conversation", "level": "Advanced", "text": "Discuss complex topics with nuance and natural rhythm." }
+      ]
+    },
     "vocabulary": { "eyebrow": "VOCABULARY", "title": "Learn words in context", "text": "Topic-based words with pronunciation, examples, and focused review.", "items": ["20 cafe words", "Asking for directions", "Everyday verbs"] },
     "grammar": { "eyebrow": "GRAMMAR", "title": "Understand the idea behind the rule", "text": "See when each form is used and what tone it carries.", "items": ["-고 싶어요: wants", "-아/어서: reasons", "-(으)ㄹ까요?: suggestions"] },
     "conversation": { "eyebrow": "REAL CONVERSATION", "title": "Practice a response you can use", "text": "Listen, understand, and answer in your own words for real situations.", "items": ["Ordering at a cafe", "Meeting someone", "Asking for help at work"] },
@@ -65,5 +85,5 @@
     "contact": { "eyebrow": "CONTACT", "title": "Send us your question", "text": "We answer questions about materials, payments, and learning on business days.", "items": [] }
   },
   "forms": { "name": "Name", "email": "Email", "password": "Password", "message": "Your question", "submit": "Send", "signIn": "Log in", "signUp": "Create account", "demo": "This MVP form does not store information." },
-  "footer": { "tagline": "Make language learning personal and useful in life.", "learn": "Learn", "company": "LearnMinea", "about": "About", "contact": "Contact", "rights": "All rights reserved.", "note": "Digital access and downloads are verified by the server." }
+  "footer": { "tagline": "Make language learning personal and useful in life.", "learn": "Learn", "company": "LearnMinea", "social": "Social", "about": "About", "contact": "Contact", "faq": "Common questions", "rights": "All rights reserved.", "note": "Digital access and downloads are verified by the server." }
 }

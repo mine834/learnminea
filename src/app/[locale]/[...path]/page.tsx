@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArrowLeft, ArrowRight, Check, Download, LockKeyhole } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Check, Download, GraduationCap, LockKeyhole } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
@@ -20,6 +20,9 @@ const productSlugs = ["beginner-1000-words", "topik-tactics", "hanja-master", "k
 
 type PageContent = { eyebrow: string; title: string; text: string; items: string[] };
 type FormLabels = { name: string; email: string; password: string; message: string; submit: string; signIn: string; signUp: string; demo: string };
+type LearningBook = { title: string; level: string; text: string; slug?: string };
+type LearningBookGroups = { vocabulary: LearningBook[]; grammar: LearningBook[]; conversation: LearningBook[] };
+type CourseCta = { title: string; text: string; button: string; pending: string };
 
 function pageKey(path: string[]) {
   const joined = path.join("/");
@@ -74,7 +77,10 @@ export default async function RoutePage({ params }: { params: Promise<{ locale: 
   const cmsSlug = path.at(-1) ?? key;
   const cmsPage = cmsPages.find((page) => page.slug === cmsSlug);
   const content = { ...local, title: cmsPage?.name ?? local.title, text: cmsPage?.description ?? local.text };
+  const learningBooks = pagesT.raw("learningBooks") as LearningBookGroups;
 
+  if (key === "learn") return <LearnPage content={content} course={pagesT.raw("learnCourse") as CourseCta} />;
+  if (key === "vocabulary" || key === "grammar" || key === "conversation") return <StandardPage content={content}><LearningBookGrid books={learningBooks[key]} digital={commonT("digital")} /></StandardPage>;
   if (key === "shop") return <ShopPage content={content} products={products} digital={commonT("digital")} />;
   if (key === "cart") return <StandardPage content={content}><CartPanel title={content.items[0] ?? ""} labels={{ continue: commonT("continue"), workbook: commonT("workbook"), decrease: commonT("decrease"), increase: commonT("increase") }} /></StandardPage>;
   if (key === "login" || key === "signup" || key === "contact") return <StandardPage content={content}><SimpleForm kind={key} labels={labels} /></StandardPage>;
@@ -82,6 +88,15 @@ export default async function RoutePage({ params }: { params: Promise<{ locale: 
   if (key === "success") return <StandardPage content={content}><div className="success-card"><Check /><Link href="/library" className="pill-button">{commonT("download")}<Download /></Link></div></StandardPage>;
   if (key === "library") return <StandardPage content={content}><div className="library-grid">{products.slice(0, 2).map((product) => <div className="library-card" key={product.slug}><div className="book-spine">PDF</div><div><h2>{product.title}</h2><p>{product.note}</p><button type="button" className="text-link">{commonT("download")}<Download /></button></div></div>)}</div></StandardPage>;
   return <StandardPage content={content} />;
+}
+
+function LearnPage({ content, course }: { content: PageContent; course: CourseCta }) {
+  const paths = ["/learn/vocabulary", "/learn/grammar", "/learn/conversation", "/learn/kdrama"];
+  return <StandardPage content={content}><div className="learn-category-grid">{content.items.map((item, index) => <Reveal key={item} delay={index * 0.08}><Link href={paths[index] ?? "/learn"} className="learn-category-card"><span>0{index + 1}</span><h2>{item}</h2><ArrowRight /></Link></Reveal>)}</div><Reveal><div className="course-cta"><GraduationCap aria-hidden="true" /><div><p className="eyebrow peach">ONLINE COURSE</p><h2>{course.title}</h2><p>{course.text}</p></div><div><button className="pill-button light" type="button" aria-describedby="course-link-status">{course.button}</button><small id="course-link-status">{course.pending}</small></div></div></Reveal></StandardPage>;
+}
+
+function LearningBookGrid({ books, digital }: { books: LearningBook[]; digital: string }) {
+  return <div className="learning-books">{books.map((book, index) => <Reveal key={`${book.title}-${book.level}`} delay={index * 0.08}><div className={`learning-book cover-${(index % 3) + 1}`}><BookOpen aria-hidden="true" /><span>{book.level}</span><h2>{book.title}</h2><p>{book.text}</p>{book.slug ? <Link href={`/shop/${book.slug}`} className="text-link">{digital}<ArrowRight /></Link> : <small>{digital}</small>}</div></Reveal>)}</div>;
 }
 
 function StandardPage({ content, children }: { content: PageContent; children?: React.ReactNode }) {

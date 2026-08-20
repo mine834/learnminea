@@ -9,6 +9,7 @@ import { SearchComposer } from "@/components/SearchComposer";
 type Category = { title: string; text: string; href: string; mark: string };
 export type Product = { slug: string; title: string; tag: string; price: string; note: string };
 type WhyItem = { number: string; title: string; text: string };
+type Review = { quote: string; name: string; detail: string };
 
 export async function HomePage({ locale }: { locale: string }) {
   const [t, common, pages, posts] = await Promise.all([
@@ -21,6 +22,7 @@ export async function HomePage({ locale }: { locale: string }) {
     return { ...product, title: cmsProduct?.title ?? product.title, note: cmsProduct?.excerpt ?? product.note };
   });
   const whyItems = t.raw("whyItems") as WhyItem[];
+  const reviews = t.raw("reviews") as Review[];
   const faqs = t.raw("faqs") as FaqItem[];
   const cmsHome = pages.find((page) => page.slug === "home");
 
@@ -91,7 +93,14 @@ export async function HomePage({ locale }: { locale: string }) {
         </div>
       </section>
 
-      <section className="section paper-section"><div className="shell faq-grid"><Reveal><h2>{t("faqTitle")}</h2></Reveal><Reveal><FaqAccordion items={faqs} /></Reveal></div></section>
+      <section className="section reviews-section">
+        <div className="shell">
+          <Reveal><div className="section-heading"><p className="eyebrow dark">{t("reviewsEyebrow")}</p><h2>{t("reviewsTitle")}</h2></div></Reveal>
+          <div className="reviews-grid">{reviews.map((review, index) => <Reveal key={review.name} delay={index * 0.08} className="review-card"><span aria-hidden="true">“</span><blockquote>{review.quote}</blockquote><div><strong>{review.name}</strong><small>{review.detail}</small></div></Reveal>)}</div>
+        </div>
+      </section>
+
+      <section id="faq" className="section paper-section"><div className="shell faq-grid"><Reveal><h2>{t("faqTitle")}</h2></Reveal><Reveal><FaqAccordion items={faqs} /></Reveal></div></section>
 
       <section className="final-cta"><div className="shell"><Reveal><div className="final-card"><div><p className="eyebrow peach">LEARNMINEA</p><h2>{t("finalTitle")}</h2><p>{t("finalText")}</p></div><Link href="/learn" className="pill-button light">{t("finalCta")}<ArrowRight /></Link><Download className="final-icon" aria-hidden="true" /></div></Reveal></div></section>
     </>
