@@ -70,10 +70,10 @@
     "name": "TOPIK",
     "slug": "topik",
     "description": "Түвшин, үгийн сан, асуултын төрөл, хугацааны стратегиа нэг төлөвлөгөөнд оруул.",
-    "content": "<h1>TOPIK бэлтгэлээ системтэй болго</h1><p>Түвшин тогтоох, сурах дараалал, туршилтын шалгалт, оноо нэмэх тактиктай бэлдэнэ.</p>",
+    "content": "<h1>TOPIK бэлтгэлээ системтэй болго</h1><p>Үгийн сангийн төлөвлөгөө, сурах дараалал, оноо нэмэх тактиктай бэлдэнэ.</p>",
     "translations": [
-      { "language": "en", "title": "TOPIK", "content": "<h1>Build a focused TOPIK plan</h1><p>Prepare with level assessment, vocabulary planning, mock tests, and scoring tactics.</p>" },
-      { "language": "ko", "title": "TOPIK", "content": "<h1>체계적인 TOPIK 준비</h1><p>수준 진단, 어휘 계획, 모의고사, 점수 전략으로 준비합니다.</p>" }
+      { "language": "en", "title": "TOPIK", "content": "<h1>Build a focused TOPIK plan</h1><p>Prepare with vocabulary planning, a clear study sequence, and scoring tactics.</p>" },
+      { "language": "ko", "title": "TOPIK", "content": "<h1>체계적인 TOPIK 준비</h1><p>어휘 계획, 학습 순서, 점수 전략으로 준비합니다.</p>" }
     ]
   },
   {
