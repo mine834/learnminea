@@ -57,6 +57,7 @@
     "learnCourse": { "title": "Register for an online course", "text": "Level-based online courses with teacher guidance will open for registration soon.", "button": "Register", "pending": "Registration link coming soon" },
     "topikRegistration": { "title": "Register for the TOPIK exam", "text": "Choose where you will take the exam to continue to the official registration site.", "button": "Register for TOPIK", "korea": "Register in Korea", "koreaNote": "Official TOPIK website", "mongolia": "Register in Mongolia", "mongoliaNote": "TOPIK registration in Mongolia" },
     "topikPdfs": [{ "title": "What is TOPIK?", "level": "Beginner (Levels 1–2)" }, { "title": "What is TOPIK?", "level": "Advanced (Levels 3–6)" }],
+    "kdramaIntro": { "title": "The expressions you hear in K-Dramas", "text": "Understand more than the translation. Learn the tone behind each expression." },
     "kdramaBooksTitle": "K-Drama digital books",
     "learningBooks": {
       "vocabulary": [{ "title": "1,000 beginner words", "level": "Elementary", "text": "Core everyday words, example sentences, and review exercises.", "slug": "beginner-1000-words" }],

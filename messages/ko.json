@@ -54,6 +54,7 @@
     "learnCourse": { "title": "온라인 수업 등록", "text": "교사의 안내와 레벨별 과정이 있는 온라인 수업 등록이 곧 시작됩니다.", "button": "등록하기", "pending": "등록 링크가 곧 추가됩니다" },
     "topikRegistration": { "title": "TOPIK 시험 접수", "text": "시험을 응시할 국가를 선택해 공식 접수 사이트로 이동하세요.", "button": "TOPIK 접수하기", "korea": "한국에서 접수", "koreaNote": "TOPIK 공식 홈페이지", "mongolia": "몽골에서 접수", "mongoliaNote": "몽골 TOPIK 접수" },
     "topikPdfs": [{ "title": "TOPIK이란 무엇인가요?", "level": "초급 (1–2급)" }, { "title": "TOPIK이란 무엇인가요?", "level": "고급 (3–6급)" }],
+    "kdramaIntro": { "title": "K-Drama에서 듣는 바로 그 표현들", "text": "번역만 보지 말고 표현에 담긴 말투와 뉘앙스를 이해하세요." },
     "kdramaBooksTitle": "K-Drama 전자책",
     "learningBooks": {
       "vocabulary": [{ "title": "초급 필수 1,000단어", "level": "초급", "text": "일상 필수 단어, 예문, 복습 연습.", "slug": "beginner-1000-words" }],

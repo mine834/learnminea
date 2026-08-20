@@ -25,6 +25,7 @@ type FormLabels = { name: string; email: string; password: string; message: stri
 type LearningBook = { title: string; level: string; text: string; slug?: string };
 type LearningBookGroups = { vocabulary: LearningBook[]; grammar: LearningBook[]; conversation: LearningBook[]; kdrama: LearningBook[] };
 type CourseCta = { title: string; text: string; button: string; pending: string };
+type SectionIntro = { title: string; text: string };
 
 function pageKey(path: string[]) {
   const joined = path.join("/");
@@ -83,7 +84,7 @@ export default async function RoutePage({ params }: { params: Promise<{ locale: 
 
   if (key === "learn") return <LearnPage content={content} course={pagesT.raw("learnCourse") as CourseCta} />;
   if (key === "vocabulary" || key === "grammar" || key === "conversation") return <StandardPage content={content}><LearningBookGrid books={learningBooks[key]} digital={commonT("digital")} /></StandardPage>;
-  if (key === "kdrama") return <StandardPage content={content}><div className="content-list">{content.items.map((item, index) => <Reveal key={item} delay={index * 0.08}><div><span>0{index + 1}</span><h2>{item}</h2><ArrowRight /></div></Reveal>)}</div><Reveal><div className="learning-book-section"><h2>{pagesT("kdramaBooksTitle")}</h2><LearningBookGrid books={learningBooks.kdrama} digital={commonT("digital")} /></div></Reveal></StandardPage>;
+  if (key === "kdrama") return <StandardPage content={content}><Reveal><div className="page-section-intro"><h2>{(pagesT.raw("kdramaIntro") as SectionIntro).title}</h2><p>{(pagesT.raw("kdramaIntro") as SectionIntro).text}</p></div></Reveal><div className="content-list">{content.items.map((item, index) => <Reveal key={item} delay={index * 0.08}><div><span>0{index + 1}</span><h2>{item}</h2><ArrowRight /></div></Reveal>)}</div><Reveal><div className="learning-book-section"><h2>{pagesT("kdramaBooksTitle")}</h2><LearningBookGrid books={learningBooks.kdrama} digital={commonT("digital")} /></div></Reveal></StandardPage>;
   if (key === "topik") return <StandardPage content={content}><Reveal><TopikResources items={content.items} pdfs={pagesT.raw("topikPdfs") as TopikPdf[]} digital={commonT("digital")} /></Reveal><Reveal><TopikRegistration labels={pagesT.raw("topikRegistration") as TopikRegistrationLabels} /></Reveal></StandardPage>;
   if (key === "shop") return <ShopPage content={content} products={products} digital={commonT("digital")} />;
   if (key === "cart") return <StandardPage content={content}><CartPanel title={content.items[0] ?? ""} labels={{ continue: commonT("continue"), workbook: commonT("workbook"), decrease: commonT("decrease"), increase: commonT("increase") }} /></StandardPage>;
