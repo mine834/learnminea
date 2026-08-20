@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "siteName": "learnminea",
+    "visualDirection": "surf-editorial-study",
+    "motionLevel": 2,
+    "defaultLocale": "mn",
+    "locales": ["mn", "en", "ko"]
+  },
+  "colors": {
+    "brand": {
+      "surfBlue": "#009afc",
+      "deepCurrent": "#006dc8",
+      "skyStart": "#4a9eff",
+      "skyMid": "#7bb8ff",
+      "skyEnd": "#a8d5ff",
+      "blushPeach": "#fbe1d1",
+      "siennaBrown": "#5d2a1a"
+    },
+    "neutral": {
+      "ink": "#17191c",
+      "paper": "#ffffff",
+      "mist": "#f3f4f6",
+      "fog": "#fafafb",
+      "hairline": "#e5e7eb",
+      "slate": "#777b86",
+      "smoke": "#a3a6af"
+    },
+    "semantic": {
+      "background": "#f3f4f6",
+      "foreground": "#17191c",
+      "card": "#ffffff",
+      "cardForeground": "#17191c",
+      "popover": "#ffffff",
+      "popoverForeground": "#17191c",
+      "primary": "#009afc",
+      "primaryForeground": "#ffffff",
+      "secondary": "#fbe1d1",
+      "secondaryForeground": "#5d2a1a",
+      "muted": "#f2f2f3",
+      "mutedForeground": "#777b86",
+      "accent": "#cfe9fd",
+      "accentForeground": "#006dc8",
+      "border": "#e5e7eb",
+      "input": "#ffffff",
+      "ring": "#009afc",
+      "success": "#167a56",
+      "warning": "#a86700",
+      "destructive": "#b33939"
+    }
+  },
+  "typography": {
+    "families": {
+      "display": "Noto Serif",
+      "body": "Noto Sans",
+      "mono": "Geist Mono"
+    },
+    "scale": {
+      "caption": { "size": "12px", "lineHeight": "1.4" },
+      "bodySm": { "size": "14px", "lineHeight": "1.5" },
+      "body": { "size": "16px", "lineHeight": "1.55" },
+      "subheading": { "size": "18px", "lineHeight": "1.45" },
+      "headingSm": { "size": "26px", "lineHeight": "1.2" },
+      "heading": { "size": "44px", "lineHeight": "1.2" },
+      "headingLg": { "size": "60px", "lineHeight": "1.05" },
+      "display": { "size": "72px", "lineHeight": "1" }
+    }
+  },
+  "spacing": {
+    "scale": {
+      "1": "4px",
+      "2": "8px",
+      "3": "12px",
+      "4": "16px",
+      "5": "20px",
+      "6": "24px",
+      "8": "32px",
+      "10": "40px",
+      "16": "64px",
+      "20": "80px",
+      "24": "96px"
+    },
+    "layout": {
+      "maxWidth": "1200px",
+      "sectionGap": "80px",
+      "pageGutterDesktop": "40px",
+      "pageGutterMobile": "20px"
+    }
+  },
+  "radius": {
+    "sm": "12px",
+    "md": "16px",
+    "lg": "20px",
+    "xl": "24px",
+    "search": "30px",
+    "pill": "9999px"
+  },
+  "shadows": {
+    "sm": "0 1px 2px rgba(0,0,0,0.05)",
+    "md": "0 8px 24px rgba(0,0,0,0.08)",
+    "lg": "0 20px 25px -5px rgba(0,0,0,0.10), 0 8px 10px -6px rgba(0,0,0,0.10)",
+    "button": "0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -4px rgba(0,0,0,0.10), inset 0 -4px 0 #006dc8"
+  },
+  "motion": {
+    "duration": {
+      "instant": "0ms",
+      "fast": "160ms",
+      "normal": "400ms",
+      "slow": "650ms",
+      "page": "300ms",
+      "stagger": "80ms"
+    },
+    "easing": {
+      "default": [0.22, 1, 0.36, 1],
+      "decelerate": [0.16, 1, 0.3, 1],
+      "accelerate": [0.4, 0, 1, 1]
+    },
+    "spring_configs": {
+      "snappy": { "type": "spring", "stiffness": 420, "damping": 34 },
+      "gentle": { "type": "spring", "stiffness": 180, "damping": 24 },
+      "bouncy": { "type": "spring", "stiffness": 300, "damping": 18 },
+      "heavy": { "type": "spring", "stiffness": 140, "damping": 30 },
+      "magnetic": { "type": "spring", "stiffness": 260, "damping": 20 }
+    },
+    "variants": {
+      "fadeUp": { "hidden": { "opacity": 0, "y": 28 }, "visible": { "opacity": 1, "y": 0 } },
+      "fadeIn": { "hidden": { "opacity": 0 }, "visible": { "opacity": 1 } },
+      "fadeDown": { "hidden": { "opacity": 0, "y": -18 }, "visible": { "opacity": 1, "y": 0 } },
+      "slideRight": { "hidden": { "opacity": 0, "x": -32 }, "visible": { "opacity": 1, "x": 0 } },
+      "slideLeft": { "hidden": { "opacity": 0, "x": 32 }, "visible": { "opacity": 1, "x": 0 } },
+      "scaleIn": { "hidden": { "opacity": 0, "scale": 0.97 }, "visible": { "opacity": 1, "scale": 1 } },
+      "textReveal": { "hidden": { "opacity": 0, "y": 18 }, "visible": { "opacity": 1, "y": 0 } },
+      "liquid": { "hidden": { "opacity": 0 }, "visible": { "opacity": 1 } },
+      "shimmer": { "hidden": { "opacity": 0.6 }, "visible": { "opacity": 1 } }
+    },
+    "gsap_configs": {}
+  }
+}

@@ -1,0 +1,12 @@
+[
+  { "label": "Нүүр", "url": "/", "order": 1, "kind": "header", "translations": [{ "language": "en", "title": "Home" }, { "language": "ko", "title": "홈" }] },
+  { "label": "Сурах", "url": "/learn", "order": 2, "kind": "header", "translations": [{ "language": "en", "title": "Learn" }, { "language": "ko", "title": "학습" }] },
+  { "label": "TOPIK", "url": "/topik", "order": 3, "kind": "header", "translations": [{ "language": "en", "title": "TOPIK" }, { "language": "ko", "title": "TOPIK" }] },
+  { "label": "K-Drama", "url": "/learn/kdrama", "order": 4, "kind": "header", "translations": [{ "language": "en", "title": "K-Drama" }, { "language": "ko", "title": "K-Drama" }] },
+  { "label": "Цахим ном", "url": "/shop", "order": 5, "kind": "header", "translations": [{ "language": "en", "title": "Digital Library" }, { "language": "ko", "title": "디지털 라이브러리" }] },
+  { "label": "Нүүр", "url": "/", "order": 1, "kind": "footer", "translations": [{ "language": "en", "title": "Home" }, { "language": "ko", "title": "홈" }] },
+  { "label": "Сурах", "url": "/learn", "order": 2, "kind": "footer", "translations": [{ "language": "en", "title": "Learn" }, { "language": "ko", "title": "학습" }] },
+  { "label": "Бидний тухай", "url": "/about", "order": 3, "kind": "footer", "translations": [{ "language": "en", "title": "About" }, { "language": "ko", "title": "소개" }] },
+  { "label": "Түгээмэл асуулт", "url": "/faq", "order": 4, "kind": "footer", "translations": [{ "language": "en", "title": "FAQ" }, { "language": "ko", "title": "자주 묻는 질문" }] },
+  { "label": "Холбоо", "url": "/contact", "order": 5, "kind": "footer", "translations": [{ "language": "en", "title": "Contact" }, { "language": "ko", "title": "문의" }] }
+]

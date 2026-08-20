@@ -1,0 +1,69 @@
+{
+  "meta": { "title": "LearnMinea | Learn a language your way", "description": "Learn practical Korean with clear explanations and focused digital materials." },
+  "nav": { "learn": "Learn", "topik": "TOPIK", "kdrama": "K-Drama", "shop": "Digital books", "library": "My library", "cart": "Cart", "login": "Log in", "menu": "Menu", "close": "Close" },
+  "common": { "start": "Start learning", "explore": "Explore", "buy": "Buy now", "download": "Download", "back": "Back", "digital": "Digital material", "minutes": "minutes", "level": "Level", "free": "Free", "continue": "Continue", "workbook": "Digital workbook", "decrease": "Decrease quantity", "increase": "Increase quantity", "benefitOne": "Structured learning path", "benefitTwo": "Practical examples and review", "benefitThree": "Server-authorized library access" },
+  "home": {
+    "eyebrow": "At your pace, from real life",
+    "heroTitle": "Learn what matters, not everything.",
+    "heroText": "The Korean words, grammar, and conversations you actually need, explained clearly in one place. Ask us where to begin.",
+    "searchPlaceholder": "For example: how do I order at a cafe?",
+    "searchAction": "Search",
+    "artifacts": ["오늘 뭐 해요?", "-고 싶어요", "TOPIK II", "진짜?"],
+    "exploreEyebrow": "EXPLORE", "exploreTitle": "Start your way", "exploreText": "Begin with one small topic you need today and build steady progress.",
+    "categories": [
+      { "title": "Vocabulary", "text": "The words you will use first in everyday life", "href": "/learn/vocabulary", "mark": "가" },
+      { "title": "Grammar", "text": "Understand the idea instead of memorizing a rule", "href": "/learn/grammar", "mark": "-요" },
+      { "title": "Real conversation", "text": "Dialogue you can use in a specific situation", "href": "/learn/conversation", "mark": "말" },
+      { "title": "K-Drama", "text": "Natural expressions you keep hearing on screen", "href": "/learn/kdrama", "mark": "컷" }
+    ],
+    "practicalEyebrow": "PRACTICAL KOREAN", "practicalTitle": "Learn Korean from real situations", "practicalText": "Understand grammar through its situation, tone, and a short example, not in isolation.",
+    "dialogueLabel": "Today's dialogue", "dialogueKo": "아이스 아메리카노 한 잔 주세요.", "dialogueMeaning": "One iced Americano, please.", "dialogueNote": "한 잔 counts cups of drinks. 주세요 makes a request polite.",
+    "libraryEyebrow": "DIGITAL LIBRARY", "libraryTitle": "Learning material you can take anywhere", "libraryText": "Five focused collections to download and work through at your own pace.",
+    "products": [
+      { "slug": "beginner-1000-words", "title": "1,000 beginner words", "tag": "VOCABULARY", "price": "₮29,900", "note": "Core words, examples, and review" },
+      { "slug": "topik-tactics", "title": "TOPIK tactics", "tag": "EXAM", "price": "₮34,900", "note": "Question types and timing strategy" },
+      { "slug": "hanja-master", "title": "Hanja Master", "tag": "WORD ROOTS", "price": "₮32,900", "note": "Remember meaning through connections" },
+      { "slug": "kdrama-phrases", "title": "K-Drama phrases", "tag": "CULTURE", "price": "₮24,900", "note": "Tone and natural screen language" },
+      { "slug": "real-conversation-korea", "title": "Real Conversation in Korea", "tag": "SPEAKING", "price": "₮39,900", "note": "Cafe, school, work, and transport" }
+    ],
+    "assessmentEyebrow": "LEARNING STYLE", "assessmentTitle": "Find a learning method that fits you", "assessmentText": "A 15-20 minute survey maps your goal, current approach, and available time into a practical program.",
+    "assessmentPoints": ["Learning method", "Personal program", "Balanced language skills"], "assessmentCta": "Start assessment",
+    "whyEyebrow": "WHY LEARNMINEA", "whyTitle": "Not more content. Better direction.",
+    "whyItems": [
+      { "number": "01", "title": "Useful, not everything", "text": "Focus on the words, rules, and situations that serve your goal." },
+      { "number": "02", "title": "Understanding, not memorizing", "text": "Learn why an expression works through meaning, connection, and examples." },
+      { "number": "03", "title": "Use your time well", "text": "Every short lesson leads to one clear outcome." },
+      { "number": "04", "title": "Materials plus guidance", "text": "Get a clear way to use each digital resource and keep progressing." }
+    ],
+    "realEyebrow": "REAL LIFE, REAL LANGUAGE", "realTitle": "Language that works beyond the lesson", "realText": "Cafes, school, work, public transport, and everyday meetings. Lessons begin with moments where you need the language.",
+    "realPlaces": ["Cafe", "School", "Work", "Transport", "Everyday life"],
+    "faqTitle": "Common questions",
+    "faqs": [
+      { "question": "Can I start as a complete beginner?", "answer": "Yes. Follow a clear sequence from Hangul through core words and short grammar explanations." },
+      { "question": "How do I receive a digital book?", "answer": "After server-side payment verification, it appears in your library and remains available to download again." },
+      { "question": "Are the lessons free?", "answer": "Core short lessons are free. Structured workbooks and focused collections are sold separately." },
+      { "question": "Do you have TOPIK material?", "answer": "Yes. TOPIK resources cover vocabulary, question types, and timing strategy." }
+    ],
+    "finalTitle": "There is no single right way to learn a language.", "finalText": "You need a method that fits, a clear explanation, and small steps you can sustain.", "finalCta": "Find your way"
+  },
+  "pages": {
+    "learn": { "eyebrow": "LEARNING LIBRARY", "title": "Learn one useful thing today", "text": "Choose a short lesson in vocabulary, grammar, conversation, or K-Drama.", "items": ["Vocabulary", "Grammar", "Conversation", "K-Drama expressions"] },
+    "vocabulary": { "eyebrow": "VOCABULARY", "title": "Learn words in context", "text": "Topic-based words with pronunciation, examples, and focused review.", "items": ["20 cafe words", "Asking for directions", "Everyday verbs"] },
+    "grammar": { "eyebrow": "GRAMMAR", "title": "Understand the idea behind the rule", "text": "See when each form is used and what tone it carries.", "items": ["-고 싶어요: wants", "-아/어서: reasons", "-(으)ㄹ까요?: suggestions"] },
+    "conversation": { "eyebrow": "REAL CONVERSATION", "title": "Practice a response you can use", "text": "Listen, understand, and answer in your own words for real situations.", "items": ["Ordering at a cafe", "Meeting someone", "Asking for help at work"] },
+    "kdrama": { "eyebrow": "K-DRAMA", "title": "Understand what you hear on screen", "text": "Go beyond literal translation to learn tone and relationship context.", "items": ["진짜?: Really?", "말도 안 돼: No way", "괜찮아: It's okay"] },
+    "topik": { "eyebrow": "TOPIK", "title": "Build a structured path to your score", "text": "Bring level, question types, and timing into one study plan.", "items": ["Level check", "Vocabulary plan", "Practice exam"] },
+    "shop": { "eyebrow": "DIGITAL BOOKS", "title": "Focused material, ready to download", "text": "Compare previews, levels, and outcomes before choosing.", "items": ["1,000 words", "TOPIK tactics", "Hanja Master", "K-Drama phrases", "Real Conversation"] },
+    "cart": { "eyebrow": "CART", "title": "Your selected material", "text": "Review the total before continuing to secure payment.", "items": ["1,000 beginner words", "Total: ₮29,900"] },
+    "checkout": { "eyebrow": "CHECKOUT", "title": "Payment details", "text": "Enter the correct email. Your material appears after payment verification.", "items": ["Contact details", "Payment method", "Order total"] },
+    "success": { "eyebrow": "SUCCESS", "title": "Your material is ready", "text": "Payment is verified. Open or download it from My Library.", "items": ["Order confirmed", "Added to library"] },
+    "login": { "eyebrow": "WELCOME BACK", "title": "Log in", "text": "Access purchased materials, progress, and saved lessons.", "items": [] },
+    "signup": { "eyebrow": "NEW ACCOUNT", "title": "Create your learning space", "text": "Register with email to keep materials and lessons together.", "items": [] },
+    "account": { "eyebrow": "MY ACCOUNT", "title": "Your learning overview", "text": "See recent lessons, orders, and your library status.", "items": ["Recent lesson", "Order history", "Profile"] },
+    "library": { "eyebrow": "MY LIBRARY", "title": "Your materials stay here", "text": "Open purchases or request a server-authorized download link.", "items": ["1,000 beginner words", "TOPIK tactics"] },
+    "about": { "eyebrow": "LEARNMINEA", "title": "Bringing language learning closer to life", "text": "LearnMinea helps people learn languages through practical use, clear explanations, and direction.", "items": ["Calm explanations", "Real-life use", "Your pace"] },
+    "contact": { "eyebrow": "CONTACT", "title": "Send us your question", "text": "We answer questions about materials, payments, and learning on business days.", "items": [] }
+  },
+  "forms": { "name": "Name", "email": "Email", "password": "Password", "message": "Your question", "submit": "Send", "signIn": "Log in", "signUp": "Create account", "demo": "This MVP form does not store information." },
+  "footer": { "tagline": "Make language learning personal and useful in life.", "learn": "Learn", "company": "LearnMinea", "about": "About", "contact": "Contact", "rights": "All rights reserved.", "note": "Digital access and downloads are verified by the server." }
+}

@@ -1,0 +1,34 @@
+{
+  "motion_level": 2,
+  "visual_direction": "surf-editorial-study",
+  "packages": [
+    "framer-motion",
+    "react-intersection-observer",
+    "lenis",
+    "lucide-react",
+    "clsx",
+    "tailwind-merge",
+    "next-intl",
+    "@apollo/client",
+    "graphql"
+  ],
+  "shadcn_components": [],
+  "custom_components": [
+    "SkyGradientHero",
+    "FloatingLessonCard",
+    "PillButton",
+    "RevealSection",
+    "DigitalLibraryCard",
+    "LearningStyleAssessment",
+    "FaqAccordion"
+  ],
+  "animation_config": {
+    "core_library": "framer-motion",
+    "scroll_library": "lenis",
+    "text_animation": "custom",
+    "page_transition": "framer",
+    "ambient_system": "css",
+    "micro_interactions": "framer-motion",
+    "gsap_plugins": []
+  }
+}

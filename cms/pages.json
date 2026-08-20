@@ -1,0 +1,123 @@
+[
+  {
+    "section": "home",
+    "name": "Нүүр",
+    "slug": "home",
+    "description": "Хэл сурахад ихийг биш, зөвийг сур. Өөрийн түвшин, зорилго, сурах арга барилдаа тохирсон хичээл, цахим ном, бодит хэрэглээний материалаа нэг дороос олоорой.",
+    "content": "<h1>Хэл сурахад ихийг биш, зөвийг сур.</h1><p>LearnMinea нь бодит хэрэглээ, ойлгомжтой тайлбар, зөв чиглүүлгээр хэл сурахад тусална.</p>",
+    "translations": [
+      { "language": "en", "title": "Home", "content": "<h1>Learn what matters, not everything.</h1><p>LearnMinea helps you learn languages through practical use, clear explanations, and focused guidance.</p>" },
+      { "language": "ko", "title": "홈", "content": "<h1>많이보다 필요한 것을 배우세요.</h1><p>LearnMinea는 실제 사용, 쉬운 설명, 맞춤형 학습 방향으로 언어 학습을 돕습니다.</p>" }
+    ]
+  },
+  {
+    "section": "learn",
+    "name": "Сурах",
+    "slug": "learn",
+    "description": "Үгийн сан, дүрэм, амьд яриа, K-Drama хичээлээс яг одоо хэрэгтэй зүйлээсээ эхлээрэй.",
+    "content": "<h1>Өөрийнхөөрөө эхэл</h1><p>Өдөр тутмын үг, ойлгомжтой дүрэм, бодит харилцан яриа, K-Drama хэллэгийг түвшин, зорилгодоо тохируулан сур.</p>",
+    "translations": [
+      { "language": "en", "title": "Learn", "content": "<h1>Start your way</h1><p>Choose practical vocabulary, clear grammar, real conversation, or K-Drama expressions for your level and goal.</p>" },
+      { "language": "ko", "title": "학습", "content": "<h1>나에게 맞는 방식으로 시작하세요</h1><p>실용 단어, 쉬운 문법, 실제 회화, K-Drama 표현을 수준과 목표에 맞게 배우세요.</p>" }
+    ]
+  },
+  {
+    "section": "vocabulary",
+    "name": "Үгийн сан",
+    "slug": "vocabulary",
+    "description": "Үгийг дангаар нь биш, хэрэглээ, дуудлага, жишээ өгүүлбэртэй нь сур.",
+    "content": "<h1>Үгийг хэрэглээтэй нь сур</h1><p>Кафе, сургууль, ажил, аялал, өдөр тутмын амьдралд хамгийн түрүүнд хэрэглэх үгс.</p>",
+    "translations": [
+      { "language": "en", "title": "Vocabulary", "content": "<h1>Learn words in context</h1><p>Useful vocabulary for cafes, school, work, travel, and daily life.</p>" },
+      { "language": "ko", "title": "단어", "content": "<h1>문맥으로 단어를 배우세요</h1><p>카페, 학교, 직장, 여행, 일상에서 바로 쓰는 단어를 배웁니다.</p>" }
+    ]
+  },
+  {
+    "section": "grammar",
+    "name": "Дүрэм",
+    "slug": "grammar",
+    "description": "Дүрмийг цээжлэх биш, ямар үед яагаад хэрэглэдгийг бодит жишээгээр ойлго.",
+    "content": "<h1>Цээжлэх биш, ойлгож сур</h1><p>Нөхцөл, өгүүлбэрийн бүтэц, өнгө аясыг Монгол тайлбар болон жишээгээр ойлгоно.</p>",
+    "translations": [
+      { "language": "en", "title": "Grammar", "content": "<h1>Understand instead of memorizing</h1><p>Learn when and why grammar patterns are used through clear explanations and examples.</p>" },
+      { "language": "ko", "title": "문법", "content": "<h1>외우기보다 이해하세요</h1><p>문법 표현을 언제 왜 사용하는지 쉬운 설명과 예문으로 배웁니다.</p>" }
+    ]
+  },
+  {
+    "section": "conversation",
+    "name": "Амьд яриа",
+    "slug": "conversation",
+    "description": "Солонгост бодитоор сонсох, хэрэглэх өдөр тутмын харилцан яриа.",
+    "content": "<h1>Солонгос дахь бодит яриа</h1><p>Кафе, дэлгүүр, сургууль, ажил, нийтийн тээвэрт хүмүүс хэрхэн ярьдгийг нөхцөлтэй нь сур.</p>",
+    "translations": [
+      { "language": "en", "title": "Real Conversation", "content": "<h1>Real conversation in Korea</h1><p>Learn how people actually speak in cafes, shops, school, work, and public transport.</p>" },
+      { "language": "ko", "title": "실전 회화", "content": "<h1>한국에서 쓰는 실제 회화</h1><p>카페, 가게, 학교, 직장, 대중교통에서 실제로 사용하는 표현을 배웁니다.</p>" }
+    ]
+  },
+  {
+    "section": "kdrama",
+    "name": "K-Drama хэллэг",
+    "slug": "kdrama",
+    "description": "Драманд байнга сонсогддог үг, хэллэгийг нөхцөл, өнгө аястай нь ойлго.",
+    "content": "<h1>Драмаар үгийн сангаа ахиул</h1><p>Зөвхөн орчуулга биш, хэзээ, ямар харилцаанд хэрэглэхийг жишээгээр сур.</p>",
+    "translations": [
+      { "language": "en", "title": "K-Drama Expressions", "content": "<h1>Grow your vocabulary with K-Drama</h1><p>Understand frequent expressions, their context, and relationship nuance.</p>" },
+      { "language": "ko", "title": "K-Drama 표현", "content": "<h1>드라마로 어휘를 늘리세요</h1><p>자주 나오는 표현의 뜻, 상황, 관계의 뉘앙스를 함께 배웁니다.</p>" }
+    ]
+  },
+  {
+    "section": "topik",
+    "name": "TOPIK",
+    "slug": "topik",
+    "description": "Түвшин, үгийн сан, асуултын төрөл, хугацааны стратегиа нэг төлөвлөгөөнд оруул.",
+    "content": "<h1>TOPIK бэлтгэлээ системтэй болго</h1><p>Түвшин тогтоох, сурах дараалал, туршилтын шалгалт, оноо нэмэх тактиктай бэлдэнэ.</p>",
+    "translations": [
+      { "language": "en", "title": "TOPIK", "content": "<h1>Build a focused TOPIK plan</h1><p>Prepare with level assessment, vocabulary planning, mock tests, and scoring tactics.</p>" },
+      { "language": "ko", "title": "TOPIK", "content": "<h1>체계적인 TOPIK 준비</h1><p>수준 진단, 어휘 계획, 모의고사, 점수 전략으로 준비합니다.</p>" }
+    ]
+  },
+  {
+    "section": "shop",
+    "name": "Цахим номын сан",
+    "slug": "shop",
+    "description": "Түвшин, зорилгодоо тохирсон цахим ном, гарын авлагаа сонгоод хаанаас ч сураарай.",
+    "content": "<h1>Хаана ч авч явах сурах материал</h1><p>Анхан шатны 1000 үг, TOPIK тактик, Ханзны мастер, K-Drama хэллэг, Real Conversation in Korea.</p>",
+    "translations": [
+      { "language": "en", "title": "Digital Library", "content": "<h1>Learning materials you can take anywhere</h1><p>Beginner 1000 Words, TOPIK Tactics, Hanja Master, K-Drama Expressions, and Real Conversation in Korea.</p>" },
+      { "language": "ko", "title": "디지털 라이브러리", "content": "<h1>어디서나 사용할 수 있는 학습 자료</h1><p>초급 1000단어, TOPIK 전략, 한자 마스터, K-Drama 표현, 한국 실전 회화.</p>" }
+    ]
+  },
+  {
+    "section": "about",
+    "name": "Бидний тухай",
+    "slug": "about",
+    "description": "LearnMinea бол бодит хэрэглээ, ойлгомжтой тайлбар, өөрт тохирсон чиглэлээр олон хэл сурах платформ.",
+    "content": "<h1>Яагаад LearnMinea?</h1><p>Бүгдийг биш, хэрэгтэйгээ сур. Цээжлэх биш, ойлго. Цагаа зөв зарцуул. Цахим материал болон чиглүүлгээ нэг дороос ав.</p>",
+    "translations": [
+      { "language": "en", "title": "About", "content": "<h1>Why LearnMinea?</h1><p>Learn what you need. Understand instead of memorizing. Use your time well. Get digital materials and guidance together.</p>" },
+      { "language": "ko", "title": "소개", "content": "<h1>왜 LearnMinea인가요?</h1><p>필요한 것을 배우고, 외우기보다 이해하며, 시간을 아끼고, 디지털 자료와 학습 방향을 함께 얻으세요.</p>" }
+    ]
+  },
+  {
+    "section": "contact",
+    "name": "Холбоо барих",
+    "slug": "contact",
+    "description": "Материал, төлбөр, сургалтын талаар асуултаа бидэнд илгээнэ үү.",
+    "content": "<h1>Бидэнд бичээрэй</h1><p>Таны асуултад ажлын өдрүүдэд хариу өгнө.</p>",
+    "translations": [
+      { "language": "en", "title": "Contact", "content": "<h1>Send us your question</h1><p>We respond to questions about materials, payments, and learning on business days.</p>" },
+      { "language": "ko", "title": "문의", "content": "<h1>문의해 주세요</h1><p>학습 자료, 결제, 학습 방법에 관한 질문에 영업일 기준으로 답변합니다.</p>" }
+    ]
+  },
+  {
+    "section": "faq",
+    "name": "Түгээмэл асуултууд",
+    "slug": "faq",
+    "description": "Анхан шат, TOPIK, номын preview, туршилтын хичээл, таталтын тухай хариултууд.",
+    "content": "<h1>Түгээмэл асуултууд</h1><h2>Ямар ч суурьгүй бол эхэлж болох уу?</h2><p>Тийм. Анхан шатны сурах дараалал бэлэн.</p><h2>Төлбөрөөс өмнө номоо харж болох уу?</h2><p>Агуулга болон жишээ хуудсыг урьдчилж харна.</p>",
+    "translations": [
+      { "language": "en", "title": "FAQ", "content": "<h1>Frequently asked questions</h1><h2>Can I start with no Korean foundation?</h2><p>Yes. A beginner learning path is available.</p><h2>Can I preview an ebook before paying?</h2><p>You can review its contents and sample pages first.</p>" },
+      { "language": "ko", "title": "자주 묻는 질문", "content": "<h1>자주 묻는 질문</h1><h2>한국어 기초가 없어도 시작할 수 있나요?</h2><p>네. 초급 학습 순서가 준비되어 있습니다.</p><h2>결제 전에 전자책을 볼 수 있나요?</h2><p>목차와 샘플 페이지를 먼저 볼 수 있습니다.</p>" }
+    ]
+  }
+]

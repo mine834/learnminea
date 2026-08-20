@@ -1,0 +1,62 @@
+{
+  "category": {
+    "name": "Цахим ном",
+    "slug": "ebooks",
+    "translations": [
+      { "language": "en", "title": "Ebooks" },
+      { "language": "ko", "title": "전자책" }
+    ]
+  },
+  "posts": [
+    {
+      "title": "Анхан шатны 1000 үг",
+      "slug": "beginner-1000-words",
+      "excerpt": "Суурь үг, бодит жишээ өгүүлбэр, давтлагын дасгалтай PDF.",
+      "content": "<h1>Анхан шатны 1000 үг</h1><p>Өдөр тутамд хамгийн их хэрэглэх 1000 үгийг сэдэв, дуудлага, жишээ өгүүлбэр, давтлагатайгаар сур.</p>",
+      "translations": [
+        { "language": "en", "title": "Beginner 1000 Words", "excerpt": "Essential words with real examples and review exercises.", "content": "<h1>Beginner 1000 Words</h1><p>Learn 1000 high-frequency words by topic with pronunciation, examples, and review.</p>" },
+        { "language": "ko", "title": "초급 1000단어", "excerpt": "실제 예문과 복습 연습이 포함된 필수 어휘.", "content": "<h1>초급 1000단어</h1><p>자주 쓰는 1000단어를 주제, 발음, 예문, 복습과 함께 배웁니다.</p>" }
+      ]
+    },
+    {
+      "title": "TOPIK тактик",
+      "slug": "topik-tactics",
+      "excerpt": "Асуултын төрөл, хугацаа хуваарилалт, оноо нэмэх стратеги.",
+      "content": "<h1>TOPIK тактик</h1><p>Шалгалтын бүтэц, асуултын төрөл, хугацааны төлөвлөлт, алдаагаа шинжлэх аргыг нэг гарын авлагад.</p>",
+      "translations": [
+        { "language": "en", "title": "TOPIK Tactics", "excerpt": "Question types, time planning, and scoring strategy.", "content": "<h1>TOPIK Tactics</h1><p>A practical guide to exam structure, question types, time planning, and error review.</p>" },
+        { "language": "ko", "title": "TOPIK 전략", "excerpt": "문제 유형, 시간 배분, 점수 향상 전략.", "content": "<h1>TOPIK 전략</h1><p>시험 구조, 문제 유형, 시간 계획, 오답 분석을 한 권으로 정리했습니다.</p>" }
+      ]
+    },
+    {
+      "title": "Ханзны мастер",
+      "slug": "hanja-master",
+      "excerpt": "Хамгийн түгээмэл ханзаар солонгос үгийн утга, холбоог ойлго.",
+      "content": "<h1>Ханзны мастер</h1><p>Түгээмэл ханзыг үгийн бүлэг, утгын холбоо, жишээгээр сурч үгийн сангаа системтэй тэл.</p>",
+      "translations": [
+        { "language": "en", "title": "Hanja Master", "excerpt": "Understand Korean word families through common Hanja.", "content": "<h1>Hanja Master</h1><p>Grow vocabulary through common Hanja, word families, meaning links, and examples.</p>" },
+        { "language": "ko", "title": "한자 마스터", "excerpt": "자주 쓰는 한자로 한국어 어휘의 연결을 이해합니다.", "content": "<h1>한자 마스터</h1><p>자주 쓰는 한자, 어휘군, 의미 연결, 예문으로 어휘를 체계적으로 늘립니다.</p>" }
+      ]
+    },
+    {
+      "title": "K-Drama хэллэг",
+      "slug": "kdrama-phrases",
+      "excerpt": "Драмаар үгийн сангаа ахиулж, хэллэгийн өнгө аясыг ойлго.",
+      "content": "<h1>K-Drama хэллэг</h1><p>Драманд хамгийн их сонсогддог үг, хэллэгийг нөхцөл, харилцааны зай, бодит жишээтэй нь сур.</p>",
+      "translations": [
+        { "language": "en", "title": "K-Drama Expressions", "excerpt": "Build vocabulary and understand nuance through drama.", "content": "<h1>K-Drama Expressions</h1><p>Learn frequent expressions with context, relationship nuance, and practical examples.</p>" },
+        { "language": "ko", "title": "K-Drama 표현", "excerpt": "드라마로 어휘를 늘리고 표현의 뉘앙스를 이해합니다.", "content": "<h1>K-Drama 표현</h1><p>자주 나오는 표현을 상황, 관계의 거리, 실제 예문과 함께 배웁니다.</p>" }
+      ]
+    },
+    {
+      "title": "Солонгос дахь амьд харилцан яриа",
+      "slug": "real-conversation-korea",
+      "excerpt": "Кафе, сургууль, ажил, тээвэрт хэрэглэх Real Conversation in Korea.",
+      "content": "<h1>Real Conversation in Korea</h1><p>Солонгост өдөр бүр сонсох, хэрэглэх яриаг нөхцөл, хариултын хувилбар, соёлын тайлбартайгаар сур.</p>",
+      "translations": [
+        { "language": "en", "title": "Real Conversation in Korea", "excerpt": "Practical conversations for cafes, school, work, and transport.", "content": "<h1>Real Conversation in Korea</h1><p>Learn everyday conversations with context, response options, and cultural notes.</p>" },
+        { "language": "ko", "title": "한국 실전 회화", "excerpt": "카페, 학교, 직장, 교통에서 쓰는 실제 회화.", "content": "<h1>한국 실전 회화</h1><p>일상 회화를 상황, 답변 선택지, 문화 설명과 함께 배웁니다.</p>" }
+      ]
+    }
+  ]
+}

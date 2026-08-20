@@ -1,0 +1,66 @@
+{
+  "meta": { "title": "LearnMinea | 나에게 맞는 언어 학습", "description": "실생활 한국어를 명확한 설명과 목적별 디지털 자료로 배워 보세요." },
+  "nav": { "learn": "배우기", "topik": "TOPIK", "kdrama": "K-Drama", "shop": "전자책", "library": "내 서재", "cart": "장바구니", "login": "로그인", "menu": "메뉴", "close": "닫기" },
+  "common": { "start": "학습 시작", "explore": "자세히 보기", "buy": "구매하기", "download": "다운로드", "back": "뒤로", "digital": "디지털 자료", "minutes": "분", "level": "레벨", "free": "무료", "continue": "계속하기", "workbook": "디지털 워크북", "decrease": "수량 줄이기", "increase": "수량 늘리기", "benefitOne": "체계적인 학습 순서", "benefitTwo": "실용적인 예시와 복습", "benefitThree": "서버에서 승인된 서재 접근" },
+  "home": {
+    "eyebrow": "내 속도로, 실제 생활에서",
+    "heroTitle": "많이보다, 필요한 것을 배우세요.",
+    "heroText": "실제로 필요한 한국어 단어, 문법, 대화를 이해하기 쉽게 한곳에서 배웁니다. 어디서 시작할지 물어보세요.",
+    "searchPlaceholder": "예: 카페에서 어떻게 주문하나요?", "searchAction": "검색", "artifacts": ["오늘 뭐 해요?", "-고 싶어요", "TOPIK II", "진짜?"],
+    "exploreEyebrow": "EXPLORE", "exploreTitle": "나만의 방식으로 시작", "exploreText": "오늘 필요한 작은 주제 하나에서 시작해 꾸준히 나아가세요.",
+    "categories": [
+      { "title": "어휘", "text": "일상에서 가장 먼저 쓰는 단어", "href": "/learn/vocabulary", "mark": "가" },
+      { "title": "문법", "text": "암기보다 의미로 이해하는 문법", "href": "/learn/grammar", "mark": "-요" },
+      { "title": "실전 대화", "text": "상황에서 바로 쓸 수 있는 대화", "href": "/learn/conversation", "mark": "말" },
+      { "title": "K-Drama", "text": "드라마에서 자주 듣는 자연스러운 표현", "href": "/learn/kdrama", "mark": "컷" }
+    ],
+    "practicalEyebrow": "PRACTICAL KOREAN", "practicalTitle": "실제 상황에서 한국어를 배우세요", "practicalText": "문법만 떼어 외우지 않고 상황, 말투, 짧은 예문과 함께 이해합니다.",
+    "dialogueLabel": "오늘의 대화", "dialogueKo": "아이스 아메리카노 한 잔 주세요.", "dialogueMeaning": "아이스 아메리카노 한 잔을 정중하게 주문하는 표현입니다.", "dialogueNote": "한 잔은 음료를 세는 말이고, 주세요는 부탁을 정중하게 만듭니다.",
+    "libraryEyebrow": "DIGITAL LIBRARY", "libraryTitle": "어디든 가져가는 학습 자료", "libraryText": "다운로드하고 내 속도로 학습하는 다섯 가지 목적별 컬렉션입니다.",
+    "products": [
+      { "slug": "beginner-1000-words", "title": "초급 필수 1,000단어", "tag": "어휘", "price": "₮29,900", "note": "기본 단어, 예문, 복습" },
+      { "slug": "topik-tactics", "title": "TOPIK 전략", "tag": "시험", "price": "₮34,900", "note": "문제 유형과 시간 전략" },
+      { "slug": "hanja-master", "title": "한자 마스터", "tag": "어원", "price": "₮32,900", "note": "연결로 단어 의미 익히기" },
+      { "slug": "kdrama-phrases", "title": "K-Drama 표현", "tag": "문화", "price": "₮24,900", "note": "말투와 자연스러운 표현" },
+      { "slug": "real-conversation-korea", "title": "한국 실전 대화", "tag": "말하기", "price": "₮39,900", "note": "카페, 학교, 직장, 교통" }
+    ],
+    "assessmentEyebrow": "LEARNING STYLE", "assessmentTitle": "나에게 맞는 학습법 찾기", "assessmentText": "15-20분 설문으로 목표, 현재 학습법, 가능한 시간을 파악해 실용적인 프로그램을 제안합니다.",
+    "assessmentPoints": ["학습 방법", "개인 프로그램", "언어 능력의 균형"], "assessmentCta": "진단 시작",
+    "whyEyebrow": "WHY LEARNMINEA", "whyTitle": "더 많은 콘텐츠보다 더 좋은 방향.",
+    "whyItems": [
+      { "number": "01", "title": "전부보다 필요한 것", "text": "목표에 필요한 단어, 문법, 상황에 집중합니다." },
+      { "number": "02", "title": "암기보다 이해", "text": "의미, 연결, 예시로 왜 이렇게 말하는지 배웁니다." },
+      { "number": "03", "title": "시간을 효율적으로", "text": "짧은 수업마다 분명한 결과가 있습니다." },
+      { "number": "04", "title": "자료와 함께 안내", "text": "디지털 자료를 활용하고 계속 성장하는 방법을 제공합니다." }
+    ],
+    "realEyebrow": "REAL LIFE, REAL LANGUAGE", "realTitle": "수업 밖에서도 통하는 언어", "realText": "카페, 학교, 직장, 대중교통, 일상의 만남. 언어가 필요한 순간부터 수업이 시작됩니다.",
+    "realPlaces": ["카페", "학교", "직장", "교통", "일상"],
+    "faqTitle": "자주 묻는 질문", "faqs": [
+      { "question": "완전 초급부터 시작할 수 있나요?", "answer": "네. 한글부터 기본 단어와 짧은 문법 설명까지 순서대로 학습할 수 있습니다." },
+      { "question": "전자책은 어떻게 받나요?", "answer": "서버에서 결제가 확인되면 내 서재에 추가되고 다시 다운로드할 수 있습니다." },
+      { "question": "수업은 무료인가요?", "answer": "기본 짧은 수업은 무료이며, 체계적인 워크북과 컬렉션은 별도로 판매합니다." },
+      { "question": "TOPIK 자료가 있나요?", "answer": "네. 어휘, 문제 유형, 시간 활용 전략을 다루는 TOPIK 자료가 있습니다." }
+    ],
+    "finalTitle": "언어를 배우는 정답은 하나가 아닙니다.", "finalText": "나에게 맞는 방법, 명확한 설명, 지속 가능한 작은 걸음이면 충분합니다.", "finalCta": "내 방법 찾기"
+  },
+  "pages": {
+    "learn": { "eyebrow": "학습 라이브러리", "title": "오늘 쓸 수 있는 한 가지를 배우세요", "text": "어휘, 문법, 대화, K-Drama 중 목표에 맞는 짧은 수업을 선택하세요.", "items": ["어휘", "문법", "대화", "K-Drama 표현"] },
+    "vocabulary": { "eyebrow": "어휘", "title": "단어를 맥락과 함께 배우세요", "text": "주제별 단어, 발음, 예문, 집중 복습을 제공합니다.", "items": ["카페 단어 20개", "길 묻기", "일상 동사"] },
+    "grammar": { "eyebrow": "문법", "title": "규칙 뒤의 의미를 이해하세요", "text": "각 형태를 언제 쓰고 어떤 말투인지 예시로 확인합니다.", "items": ["-고 싶어요: 희망", "-아/어서: 이유", "-(으)ㄹ까요?: 제안"] },
+    "conversation": { "eyebrow": "실전 대화", "title": "바로 답할 수 있는 대화 연습", "text": "듣고, 이해하고, 내 말로 답하는 순서로 연습합니다.", "items": ["카페 주문", "첫 만남", "직장에서 도움 요청"] },
+    "kdrama": { "eyebrow": "K-DRAMA", "title": "화면에서 들은 표현을 제대로 이해하세요", "text": "직역을 넘어 말투와 관계의 맥락을 배웁니다.", "items": ["진짜?: 정말?", "말도 안 돼: 그럴 리 없어", "괜찮아: 문제없어"] },
+    "topik": { "eyebrow": "TOPIK", "title": "목표 점수까지 체계적으로", "text": "레벨, 문제 유형, 시간 전략을 하나의 계획으로 만드세요.", "items": ["레벨 확인", "어휘 계획", "모의시험"] },
+    "shop": { "eyebrow": "전자책", "title": "목적이 분명한 다운로드 자료", "text": "미리보기, 레벨, 학습 결과를 비교하고 선택하세요.", "items": ["1,000단어", "TOPIK 전략", "한자 마스터", "K-Drama 표현", "실전 대화"] },
+    "cart": { "eyebrow": "장바구니", "title": "선택한 자료", "text": "총액을 확인한 뒤 안전한 결제로 이동합니다.", "items": ["초급 필수 1,000단어", "합계: ₮29,900"] },
+    "checkout": { "eyebrow": "CHECKOUT", "title": "결제 정보", "text": "이메일을 정확히 입력하세요. 결제 확인 후 자료가 서재에 추가됩니다.", "items": ["연락처", "결제 방법", "주문 금액"] },
+    "success": { "eyebrow": "완료", "title": "자료가 준비되었습니다", "text": "결제가 확인되었습니다. 내 서재에서 열거나 다운로드하세요.", "items": ["주문 확인", "서재에 추가됨"] },
+    "login": { "eyebrow": "다시 오신 것을 환영합니다", "title": "로그인", "text": "구매 자료, 학습 기록, 저장한 수업을 확인하세요.", "items": [] },
+    "signup": { "eyebrow": "새 계정", "title": "나만의 학습 공간 만들기", "text": "이메일로 가입하고 자료와 수업을 한곳에 보관하세요.", "items": [] },
+    "account": { "eyebrow": "내 계정", "title": "학습 현황", "text": "최근 수업, 주문, 서재 상태를 확인합니다.", "items": ["최근 수업", "주문 내역", "프로필"] },
+    "library": { "eyebrow": "내 서재", "title": "내 자료는 언제나 여기에", "text": "구매한 자료를 열거나 서버 승인 링크로 다시 다운로드합니다.", "items": ["초급 필수 1,000단어", "TOPIK 전략"] },
+    "about": { "eyebrow": "LEARNMINEA", "title": "언어 학습을 삶에 더 가깝게", "text": "LearnMinea는 실용적인 사용, 명확한 설명, 올바른 방향으로 언어 학습을 돕습니다.", "items": ["차분한 설명", "실생활 활용", "나의 속도"] },
+    "contact": { "eyebrow": "문의", "title": "궁금한 점을 보내 주세요", "text": "자료, 결제, 학습 관련 문의에 영업일 기준으로 답변합니다.", "items": [] }
+  },
+  "forms": { "name": "이름", "email": "이메일", "password": "비밀번호", "message": "문의 내용", "submit": "보내기", "signIn": "로그인", "signUp": "가입하기", "demo": "MVP에서는 이 양식의 정보를 저장하지 않습니다." },
+  "footer": { "tagline": "언어 학습을 나답게, 삶에 유용하게 만듭니다.", "learn": "배우기", "company": "LearnMinea", "about": "소개", "contact": "문의", "rights": "모든 권리 보유.", "note": "디지털 자료 접근과 다운로드는 서버에서 확인합니다." }
+}
