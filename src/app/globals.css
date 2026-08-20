@@ -220,6 +220,17 @@ h3, p { margin-top: 0; }
 .content-list span { color: var(--deep-current); font-size: 12px; }
 .content-list h2 { font-size: clamp(24px, 4vw, 34px); }
 .content-list svg { width: 20px; }
+.topik-resource-row { width: 100%; min-height: 110px; display: grid; grid-template-columns: 60px 1fr 30px; align-items: center; gap: 20px; padding: 0; border: 0; border-bottom: 1px solid var(--hairline); background: transparent; color: inherit; text-align: left; cursor: pointer; }
+.topik-resource-row > span { color: var(--deep-current); font-size: 12px; }
+.topik-resource-row h2 { font-size: clamp(24px, 4vw, 34px); }
+.topik-resource-row > svg { width: 20px; transition: transform 160ms var(--ease); }
+.topik-resource-row > svg.rotated { transform: rotate(180deg); }
+.topik-pdf-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; padding: 28px 0; }
+.topik-pdf-card { min-height: 230px; display: flex; flex-direction: column; align-items: start; padding: 26px; border: 1px solid var(--hairline); border-radius: var(--radius-lg); background: var(--fog); }
+.topik-pdf-card > svg { width: 28px; margin-bottom: auto; color: var(--deep-current); }
+.topik-pdf-card > span { margin: 28px 0 8px; color: var(--deep-current); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.topik-pdf-card h3 { margin-bottom: 20px; font-family: var(--font-display), serif; font-size: 24px; font-weight: 400; }
+.topik-pdf-card small { color: var(--slate); }
 .learn-category-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 56px; }
 .learn-category-card { min-height: 170px; display: grid; grid-template-columns: 1fr auto; align-content: space-between; padding: 25px; border: 1px solid var(--hairline); border-radius: var(--radius-lg); background: var(--fog); }
 .learn-category-card span { grid-column: 1 / -1; color: var(--deep-current); font-size: 12px; }
@@ -330,7 +341,7 @@ h3, p { margin-top: 0; }
   .artifact { min-width: 118px; padding: 13px 16px; font-size: 17px; }
   .artifact-1 { top: 14px; left: 1%; }.artifact-2 { top: 20px; right: 1%; }.artifact-3 { bottom: 25px; left: 5%; }.artifact-4 { right: 2%; bottom: 10px; }
   .hero-orbit { width: 48px; height: 48px; }
-  .section-heading.wide, .split-feature, .assessment-grid, .why-grid, .real-life-grid, .faq-grid, .product-detail-grid, .checkout-grid, .reviews-grid, .learning-books, .learning-book-section .learning-books, .learn-category-grid, .course-cta, .topik-registration-options { grid-template-columns: 1fr; }
+  .section-heading.wide, .split-feature, .assessment-grid, .why-grid, .real-life-grid, .faq-grid, .product-detail-grid, .checkout-grid, .reviews-grid, .learning-books, .learning-book-section .learning-books, .learn-category-grid, .course-cta, .topik-registration-options, .topik-pdf-grid { grid-template-columns: 1fr; }
   .section-heading.wide, .split-feature, .assessment-grid, .why-grid, .real-life-grid, .faq-grid, .product-detail-grid { gap: 42px; }
   .section-heading h2, .feature-copy h2, .why-intro h2, .faq-grid > div > h2 { font-size: 42px; }
   .category-grid { grid-template-columns: 1fr; }
@@ -357,6 +368,7 @@ h3, p { margin-top: 0; }
   .page-hero { padding: 150px 0 68px; }
   .page-hero h1 { font-size: 50px; }
   .content-list > div > div { grid-template-columns: 42px 1fr 24px; }
+  .topik-resource-row { grid-template-columns: 42px 1fr 24px; }
   .simple-form { padding: 22px; }
   .cart-panel { grid-template-columns: 1fr auto; }
   .cart-panel > strong { grid-column: 1 / -1; }
