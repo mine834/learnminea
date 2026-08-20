@@ -232,6 +232,9 @@ h3, p { margin-top: 0; }
 .course-cta > div:last-child { display: grid; justify-items: center; gap: 10px; }
 .course-cta small { color: var(--smoke); font-size: 11px; }
 .learning-books { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.learning-book-section { margin-top: 64px; }
+.learning-book-section > h2 { margin-bottom: 28px; font-size: clamp(32px, 5vw, 44px); }
+.learning-book-section .learning-books { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .learning-book { min-height: 330px; display: flex; flex-direction: column; align-items: start; padding: 28px; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
 .learning-book > svg { width: 28px; margin-bottom: auto; }
 .learning-book > span { margin: 38px 0 10px; font-size: 10px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
@@ -327,7 +330,7 @@ h3, p { margin-top: 0; }
   .artifact { min-width: 118px; padding: 13px 16px; font-size: 17px; }
   .artifact-1 { top: 14px; left: 1%; }.artifact-2 { top: 20px; right: 1%; }.artifact-3 { bottom: 25px; left: 5%; }.artifact-4 { right: 2%; bottom: 10px; }
   .hero-orbit { width: 48px; height: 48px; }
-  .section-heading.wide, .split-feature, .assessment-grid, .why-grid, .real-life-grid, .faq-grid, .product-detail-grid, .checkout-grid, .reviews-grid, .learning-books, .learn-category-grid, .course-cta, .topik-registration-options { grid-template-columns: 1fr; }
+  .section-heading.wide, .split-feature, .assessment-grid, .why-grid, .real-life-grid, .faq-grid, .product-detail-grid, .checkout-grid, .reviews-grid, .learning-books, .learning-book-section .learning-books, .learn-category-grid, .course-cta, .topik-registration-options { grid-template-columns: 1fr; }
   .section-heading.wide, .split-feature, .assessment-grid, .why-grid, .real-life-grid, .faq-grid, .product-detail-grid { gap: 42px; }
   .section-heading h2, .feature-copy h2, .why-intro h2, .faq-grid > div > h2 { font-size: 42px; }
   .category-grid { grid-template-columns: 1fr; }

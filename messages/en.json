@@ -56,6 +56,7 @@
     "learn": { "eyebrow": "LEARNING LIBRARY", "title": "Learn one useful thing today", "text": "Choose a short lesson in vocabulary, grammar, conversation, or K-Drama.", "items": ["Vocabulary", "Grammar", "Conversation", "K-Drama expressions"] },
     "learnCourse": { "title": "Register for an online course", "text": "Level-based online courses with teacher guidance will open for registration soon.", "button": "Register", "pending": "Registration link coming soon" },
     "topikRegistration": { "title": "Register for the TOPIK exam", "text": "Choose where you will take the exam to continue to the official registration site.", "button": "Register for TOPIK", "korea": "Register in Korea", "koreaNote": "Official TOPIK website", "mongolia": "Register in Mongolia", "mongoliaNote": "TOPIK registration in Mongolia" },
+    "kdramaBooksTitle": "K-Drama digital books",
     "learningBooks": {
       "vocabulary": [{ "title": "1,000 beginner words", "level": "Elementary", "text": "Core everyday words, example sentences, and review exercises.", "slug": "beginner-1000-words" }],
       "grammar": [
@@ -67,6 +68,10 @@
         { "title": "Korean Conversation", "level": "Elementary", "text": "Greetings, cafes, shopping, and short everyday exchanges." },
         { "title": "Korean Conversation", "level": "Intermediate", "text": "Express ideas at school, work, and while traveling." },
         { "title": "Korean Conversation", "level": "Advanced", "text": "Discuss complex topics with nuance and natural rhythm." }
+      ],
+      "kdrama": [
+        { "title": "K-Drama Expressions I", "level": "Everyday expressions", "text": "Learn frequent drama vocabulary, expressions, and tone through examples.", "slug": "kdrama-phrases" },
+        { "title": "K-Drama Expressions II", "level": "Relationships and emotion", "text": "Understand social distance, emotion, and expressions with hidden meaning." }
       ]
     },
     "vocabulary": { "eyebrow": "VOCABULARY", "title": "Learn words in context", "text": "Topic-based words with pronunciation, examples, and focused review.", "items": ["20 cafe words", "Asking for directions", "Everyday verbs"] },
