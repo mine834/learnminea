@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArrowLeft, ArrowRight, BookOpen, Check, Download, GraduationCap, LockKeyhole } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Check, Download, GraduationCap, LockKeyhole, Volume2 } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
@@ -26,6 +26,8 @@ type LearningBook = { title: string; level: string; text: string; slug?: string 
 type LearningBookGroups = { vocabulary: LearningBook[]; grammar: LearningBook[]; conversation: LearningBook[]; kdrama: LearningBook[] };
 type CourseCta = { title: string; text: string; button: string; pending: string };
 type SectionIntro = { title: string; text: string };
+type KDramaExpression = { ko: string; meaning: string; note: string };
+type KDramaTeaser = { example: string; text: string; cta: string };
 
 function pageKey(path: string[]) {
   const joined = path.join("/");
@@ -84,7 +86,7 @@ export default async function RoutePage({ params }: { params: Promise<{ locale: 
 
   if (key === "learn") return <LearnPage content={content} course={pagesT.raw("learnCourse") as CourseCta} />;
   if (key === "vocabulary" || key === "grammar" || key === "conversation") return <StandardPage content={content}><LearningBookGrid books={learningBooks[key]} digital={commonT("digital")} /></StandardPage>;
-  if (key === "kdrama") return <StandardPage content={content}><Reveal><div className="page-section-intro"><h2>{(pagesT.raw("kdramaIntro") as SectionIntro).title}</h2><p>{(pagesT.raw("kdramaIntro") as SectionIntro).text}</p></div></Reveal><div className="content-list">{content.items.map((item, index) => <Reveal key={item} delay={index * 0.08}><div><span>0{index + 1}</span><h2>{item}</h2><ArrowRight /></div></Reveal>)}</div><Reveal><div className="learning-book-section"><h2>{pagesT("kdramaBooksTitle")}</h2><LearningBookGrid books={learningBooks.kdrama} digital={commonT("digital")} /></div></Reveal></StandardPage>;
+  if (key === "kdrama") return <KDramaPage content={content} intro={pagesT.raw("kdramaIntro") as SectionIntro} expressions={pagesT.raw("kdramaExpressions") as KDramaExpression[]} teaser={pagesT.raw("kdramaTeaser") as KDramaTeaser} books={learningBooks.kdrama} booksTitle={pagesT("kdramaBooksTitle")} digital={commonT("digital")} />;
   if (key === "topik") return <StandardPage content={content}><Reveal><TopikResources items={content.items} pdfs={pagesT.raw("topikPdfs") as TopikPdf[]} digital={commonT("digital")} /></Reveal><Reveal><TopikRegistration labels={pagesT.raw("topikRegistration") as TopikRegistrationLabels} /></Reveal></StandardPage>;
   if (key === "shop") return <ShopPage content={content} products={products} digital={commonT("digital")} />;
   if (key === "cart") return <StandardPage content={content}><CartPanel title={content.items[0] ?? ""} labels={{ continue: commonT("continue"), workbook: commonT("workbook"), decrease: commonT("decrease"), increase: commonT("increase") }} /></StandardPage>;
@@ -93,6 +95,10 @@ export default async function RoutePage({ params }: { params: Promise<{ locale: 
   if (key === "success") return <StandardPage content={content}><div className="success-card"><Check /><Link href="/library" className="pill-button">{commonT("download")}<Download /></Link></div></StandardPage>;
   if (key === "library") return <StandardPage content={content}><div className="library-grid">{products.slice(0, 2).map((product) => <div className="library-card" key={product.slug}><div className="book-spine">PDF</div><div><h2>{product.title}</h2><p>{product.note}</p><button type="button" className="text-link">{commonT("download")}<Download /></button></div></div>)}</div></StandardPage>;
   return <StandardPage content={content} />;
+}
+
+function KDramaPage({ content, intro, expressions, teaser, books, booksTitle, digital }: { content: PageContent; intro: SectionIntro; expressions: KDramaExpression[]; teaser: KDramaTeaser; books: LearningBook[]; booksTitle: string; digital: string }) {
+  return <StandardPage content={content}><Reveal><div className="page-section-intro"><h2>{intro.title}</h2><p>{intro.text}</p></div></Reveal><div className="kdrama-expression-list">{expressions.map((expression, index) => <Reveal key={expression.ko} delay={index * 0.08}><div className="kdrama-expression"><span>0{index + 1}</span><div><h2>{expression.ko}</h2><strong>{expression.meaning}</strong><p>{expression.note}</p></div><button type="button" aria-label={expression.ko}><Volume2 aria-hidden="true" /></button></div></Reveal>)}</div><Reveal><div className="kdrama-teaser"><strong>{teaser.example}</strong><p>{teaser.text}</p><Link href="/learn/kdrama#kdrama-books" className="text-link">{teaser.cta}<ArrowRight /></Link></div></Reveal><Reveal><div id="kdrama-books" className="learning-book-section"><h2>{booksTitle}</h2><LearningBookGrid books={books} digital={digital} /></div></Reveal></StandardPage>;
 }
 
 function LearnPage({ content, course }: { content: PageContent; course: CourseCta }) {

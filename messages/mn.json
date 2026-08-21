@@ -76,6 +76,8 @@
     "topikRegistration": { "title": "TOPIK шалгалтад бүртгүүлэх", "text": "Шалгалт өгөх улсаа сонгоод албан ёсны бүртгэлийн хуудас руу шилжинэ үү.", "button": "TOPIK-д бүртгүүлэх", "korea": "Солонгост бүртгүүлэх", "koreaNote": "TOPIK албан ёсны сайт", "mongolia": "Монголд бүртгүүлэх", "mongoliaNote": "Монгол дахь TOPIK бүртгэл" },
     "topikPdfs": [{ "title": "TOPIK гэж юу вэ?", "level": "Анхан шат (1, 2)" }, { "title": "TOPIK гэж юу вэ?", "level": "Ахисан шат (3–6)" }],
     "kdramaIntro": { "title": "K-Drama дээр сонсдог тэр хэллэгүүд", "text": "Зүгээр орчуулгыг нь биш, өнгө аястай нь ойлго." },
+    "kdramaExpressions": [{ "ko": "진짜?", "meaning": "Нээрээ юу?", "note": "Гайхах · Casual" }, { "ko": "말도 안 돼", "meaning": "Байж боломгүй.", "note": "Итгэхгүй байх" }, { "ko": "됐어", "meaning": "Боллоо · За боль · Хэрэггүй", "note": "Өнгө аясаас хамаарна" }],
+    "kdramaTeaser": { "example": "됐어 🙂 ≠ 됐어! 😠", "text": "Ижил үг. Өөр өнгө аяс.", "cta": "K-Drama хэллэгүүдийг үзэх" },
     "kdramaBooksTitle": "K-Drama цахим номууд",
     "learningBooks": {
       "vocabulary": [{ "title": "Анхан шатны 1000 үг", "level": "Анхан шат", "text": "Өдөр тутмын суурь үг, жишээ өгүүлбэр, давтлагын дасгал.", "slug": "beginner-1000-words" }],

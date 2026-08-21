@@ -223,6 +223,17 @@ h3, p { margin-top: 0; }
 .page-section-intro { max-width: 700px; margin-bottom: 48px; }
 .page-section-intro h2 { font-size: clamp(34px, 5vw, 48px); line-height: 1.08; }
 .page-section-intro p { margin: 18px 0 0; color: var(--slate); font-size: 18px; }
+.kdrama-expression-list { border-top: 1px solid var(--hairline); }
+.kdrama-expression { min-height: 150px; display: grid; grid-template-columns: 58px 1fr auto; align-items: center; gap: 22px; border-bottom: 1px solid var(--hairline); }
+.kdrama-expression > span { align-self: start; padding-top: 34px; color: var(--deep-current); font-size: 12px; }
+.kdrama-expression h2 { margin-bottom: 7px; font-size: 32px; }
+.kdrama-expression strong { display: block; margin-bottom: 5px; font-size: 17px; font-weight: 500; }
+.kdrama-expression p { margin: 0; color: var(--slate); font-size: 13px; }
+.kdrama-expression button { width: 48px; height: 48px; display: grid; place-items: center; border: 1px solid var(--hairline); border-radius: 50%; background: var(--paper); color: var(--deep-current); cursor: pointer; }
+.kdrama-expression button svg { width: 20px; }
+.kdrama-teaser { margin-top: 36px; padding: 28px; border-radius: var(--radius-lg); background: var(--peach); color: var(--sienna); }
+.kdrama-teaser > strong { font-family: var(--font-display), serif; font-size: clamp(26px, 4vw, 38px); font-weight: 400; }
+.kdrama-teaser p { margin: 8px 0 18px; }
 .topik-resource-row { width: 100%; min-height: 110px; display: grid; grid-template-columns: 60px 1fr 30px; align-items: center; gap: 20px; padding: 0; border: 0; border-bottom: 1px solid var(--hairline); background: transparent; color: inherit; text-align: left; cursor: pointer; }
 .topik-resource-row > span { color: var(--deep-current); font-size: 12px; }
 .topik-resource-row h2 { font-size: clamp(24px, 4vw, 34px); }
@@ -372,6 +383,7 @@ h3, p { margin-top: 0; }
   .page-hero h1 { font-size: 50px; }
   .content-list > div > div { grid-template-columns: 42px 1fr 24px; }
   .topik-resource-row { grid-template-columns: 42px 1fr 24px; }
+  .kdrama-expression { grid-template-columns: 40px 1fr auto; gap: 12px; }
   .simple-form { padding: 22px; }
   .cart-panel { grid-template-columns: 1fr auto; }
   .cart-panel > strong { grid-column: 1 / -1; }
