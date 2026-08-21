@@ -24,7 +24,6 @@
       { "slug": "beginner-1000-words", "title": "1,000 beginner words", "tag": "VOCABULARY", "price": "₮29,900", "note": "Core words, examples, and review" },
       { "slug": "topik-tactics", "title": "TOPIK tactics", "tag": "EXAM", "price": "₮34,900", "note": "Question types and timing strategy" },
       { "slug": "hanja-master", "title": "Hanja Master", "tag": "WORD ROOTS", "price": "₮32,900", "note": "Remember meaning through connections" },
-      { "slug": "kdrama-phrases", "title": "K-Drama phrases", "tag": "CULTURE", "price": "₮24,900", "note": "Tone and natural screen language" },
       { "slug": "real-conversation-korea", "title": "Real Conversation in Korea", "tag": "SPEAKING", "price": "₮39,900", "note": "Cafe, school, work, and transport" }
     ],
     "assessmentEyebrow": "LEARNING STYLE", "assessmentTitle": "Find a learning method that fits you", "assessmentText": "A 15-20 minute survey maps your goal, current approach, and available time into a practical program.",

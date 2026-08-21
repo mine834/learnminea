@@ -10,6 +10,7 @@ import { SimpleForm } from "@/components/SimpleForm";
 import { CartPanel } from "@/components/CartPanel";
 import { TopikRegistration, type TopikRegistrationLabels } from "@/components/TopikRegistration";
 import { TopikResources, type TopikPdf } from "@/components/TopikResources";
+import { KDramaBooksReveal } from "@/components/KDramaBooksReveal";
 import type { Product } from "@/components/HomePage";
 
 const staticPaths = [
@@ -98,7 +99,7 @@ export default async function RoutePage({ params }: { params: Promise<{ locale: 
 }
 
 function KDramaPage({ content, intro, expressions, teaser, books, booksTitle, digital }: { content: PageContent; intro: SectionIntro; expressions: KDramaExpression[]; teaser: KDramaTeaser; books: LearningBook[]; booksTitle: string; digital: string }) {
-  return <StandardPage content={content}><Reveal><div className="page-section-intro"><h2>{intro.title}</h2><p>{intro.text}</p></div></Reveal><div className="kdrama-expression-list">{expressions.map((expression, index) => <Reveal key={expression.ko} delay={index * 0.08}><div className="kdrama-expression"><span>0{index + 1}</span><div><h2>{expression.ko}</h2><strong>{expression.meaning}</strong><p>{expression.note}</p></div><button type="button" aria-label={expression.ko}><Volume2 aria-hidden="true" /></button></div></Reveal>)}</div><Reveal><div className="kdrama-teaser"><strong>{teaser.example}</strong><p>{teaser.text}</p><Link href="/learn/kdrama#kdrama-books" className="text-link">{teaser.cta}<ArrowRight /></Link></div></Reveal><Reveal><div id="kdrama-books" className="learning-book-section"><h2>{booksTitle}</h2><LearningBookGrid books={books} digital={digital} /></div></Reveal></StandardPage>;
+  return <StandardPage content={content}><Reveal><div className="page-section-intro"><h2>{intro.title}</h2><p>{intro.text}</p></div></Reveal><div className="kdrama-expression-list">{expressions.map((expression, index) => <Reveal key={expression.ko} delay={index * 0.08}><div className="kdrama-expression"><span>0{index + 1}</span><div><h2>{expression.ko}</h2><strong>{expression.meaning}</strong><p>{expression.note}</p></div><button type="button" aria-label={expression.ko}><Volume2 aria-hidden="true" /></button></div></Reveal>)}</div><Reveal><KDramaBooksReveal teaser={teaser} books={books} booksTitle={booksTitle} digital={digital} /></Reveal></StandardPage>;
 }
 
 function LearnPage({ content, course }: { content: PageContent; course: CourseCta }) {

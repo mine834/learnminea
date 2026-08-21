@@ -22,7 +22,6 @@
       { "slug": "beginner-1000-words", "title": "초급 필수 1,000단어", "tag": "어휘", "price": "₮29,900", "note": "기본 단어, 예문, 복습" },
       { "slug": "topik-tactics", "title": "TOPIK 전략", "tag": "시험", "price": "₮34,900", "note": "문제 유형과 시간 전략" },
       { "slug": "hanja-master", "title": "한자 마스터", "tag": "어원", "price": "₮32,900", "note": "연결로 단어 의미 익히기" },
-      { "slug": "kdrama-phrases", "title": "K-Drama 표현", "tag": "문화", "price": "₮24,900", "note": "말투와 자연스러운 표현" },
       { "slug": "real-conversation-korea", "title": "한국 실전 대화", "tag": "말하기", "price": "₮39,900", "note": "카페, 학교, 직장, 교통" }
     ],
     "assessmentEyebrow": "LEARNING STYLE", "assessmentTitle": "나에게 맞는 학습법 찾기", "assessmentText": "15-20분 설문으로 목표, 현재 학습법, 가능한 시간을 파악해 실용적인 프로그램을 제안합니다.",
