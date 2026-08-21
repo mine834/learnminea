@@ -5,6 +5,7 @@ import { getCmsPages, getCmsPosts } from "@/lib/cms";
 import { Reveal } from "@/components/motion/Reveal";
 import { FaqAccordion, type FaqItem } from "@/components/FaqAccordion";
 import { SearchComposer } from "@/components/SearchComposer";
+import { PronunciationButton } from "@/components/PronunciationButton";
 
 type Category = { title: string; text: string; href: string; mark: string };
 export type Product = { slug: string; title: string; tag: string; price: string; note: string };
@@ -46,7 +47,7 @@ export async function HomePage({ locale }: { locale: string }) {
 
       <section className="section paper-section">
         <div className="shell">
-          <Reveal><div className="section-heading"><p className="eyebrow dark">{t("exploreEyebrow")}</p><h2>{t("exploreTitle")}</h2><p>{t("exploreText")}</p></div></Reveal>
+          <Reveal><div className="section-heading"><p className="eyebrow dark">{t("exploreEyebrow")}</p><h2 className="explore-title">{t("exploreTitle")}</h2><p>{t("exploreText")}</p></div></Reveal>
           <div className="category-grid">
             {categories.map((category, index) => <Reveal key={category.href} delay={index * 0.08}><Link href={category.href} className="category-card"><span className="category-mark">{category.mark}</span><div><h3>{category.title}</h3><p>{category.text}</p></div><ArrowRight /></Link></Reveal>)}
           </div>
@@ -57,7 +58,7 @@ export async function HomePage({ locale }: { locale: string }) {
         <div className="shell split-feature">
           <Reveal className="dialogue-board">
             <div className="dialogue-top"><span>{t("dialogueLabel")}</span><button type="button" aria-label="Play"><Play /></button></div>
-            <p className="hangul">{t("dialogueKo")}</p><p className="meaning">{t("dialogueMeaning")}</p><div className="lesson-note"><MessageCircle /><p>{t("dialogueNote")}</p></div>
+            <div className="dialogue-line"><p className="hangul">{t("dialogueKo")}</p><PronunciationButton text={t("dialogueKo")} label={t("dialogueListen")} /></div><p className="meaning">{t("dialogueMeaning")}</p><div className="lesson-note"><MessageCircle /><p>{t("dialogueNote")}</p></div>
           </Reveal>
           <Reveal delay={0.1} className="feature-copy"><p className="eyebrow dark">{t("practicalEyebrow")}</p><h2>{t("practicalTitle")}</h2><p>{t("practicalText")}</p><Link href="/learn/conversation" className="text-link">{common("explore")}<ArrowRight /></Link></Reveal>
         </div>

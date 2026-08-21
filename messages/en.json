@@ -18,6 +18,7 @@
     ],
     "practicalEyebrow": "PRACTICAL KOREAN", "practicalTitle": "Learn Korean from real situations", "practicalText": "Understand grammar through its situation, tone, and a short example, not in isolation.",
     "dialogueLabel": "Today's dialogue", "dialogueKo": "아이스 아메리카노 한 잔 주세요.", "dialogueMeaning": "One iced Americano, please.", "dialogueNote": "한 잔 counts cups of drinks. 주세요 makes a request polite.",
+    "dialogueListen": "Listen to Korean pronunciation",
     "libraryEyebrow": "DIGITAL LIBRARY", "libraryTitle": "Learning material you can take anywhere", "libraryText": "Five focused collections to download and work through at your own pace.",
     "products": [
       { "slug": "beginner-1000-words", "title": "1,000 beginner words", "tag": "VOCABULARY", "price": "₮29,900", "note": "Core words, examples, and review" },

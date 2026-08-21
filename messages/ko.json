@@ -16,6 +16,7 @@
     ],
     "practicalEyebrow": "PRACTICAL KOREAN", "practicalTitle": "실제 상황에서 한국어를 배우세요", "practicalText": "문법만 떼어 외우지 않고 상황, 말투, 짧은 예문과 함께 이해합니다.",
     "dialogueLabel": "오늘의 대화", "dialogueKo": "아이스 아메리카노 한 잔 주세요.", "dialogueMeaning": "아이스 아메리카노 한 잔을 정중하게 주문하는 표현입니다.", "dialogueNote": "한 잔은 음료를 세는 말이고, 주세요는 부탁을 정중하게 만듭니다.",
+    "dialogueListen": "한국어 발음 듣기",
     "libraryEyebrow": "DIGITAL LIBRARY", "libraryTitle": "어디든 가져가는 학습 자료", "libraryText": "다운로드하고 내 속도로 학습하는 다섯 가지 목적별 컬렉션입니다.",
     "products": [
       { "slug": "beginner-1000-words", "title": "초급 필수 1,000단어", "tag": "어휘", "price": "₮29,900", "note": "기본 단어, 예문, 복습" },
