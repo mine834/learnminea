@@ -103,8 +103,8 @@ h3, p { margin-top: 0; }
 
 .section-heading { max-width: 680px; margin-bottom: 50px; }
 .section-heading.wide { max-width: none; display: grid; grid-template-columns: 1.2fr .8fr; align-items: end; gap: 60px; }
-.section-heading h2, .feature-copy h2, .why-intro h2, .faq-grid > div > h2 { font-size: clamp(42px, 5vw, 60px); line-height: 1.06; }
-.section-heading h2.explore-title { font-size: clamp(34px, 4vw, 48px); }
+.section-heading h2, .feature-copy h2, .why-intro h2, .faq-grid > div > h2 { font-family: var(--font-display), serif; font-size: clamp(34px, 4vw, 48px); font-weight: 400; line-height: 1.08; letter-spacing: -0.035em; }
+.section-heading h2.explore-title { font-size: clamp(32px, 3.6vw, 44px); }
 .section-heading p:last-child, .feature-copy > p:not(.eyebrow), .section-heading.wide > p { color: var(--slate); font-size: 17px; }
 .category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .category-card { min-height: 300px; display: flex; flex-direction: column; justify-content: space-between; padding: 24px; border: 1px solid var(--hairline); border-radius: var(--radius-lg); background: var(--fog); transition: transform 160ms var(--ease), box-shadow 160ms var(--ease); }
@@ -151,7 +151,7 @@ h3, p { margin-top: 0; }
 
 .assessment-section { background: var(--ink); color: var(--paper); }
 .assessment-grid { display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 90px; }
-.assessment-grid h2 { max-width: 620px; font-size: clamp(44px, 5vw, 64px); line-height: 1.05; }
+.assessment-grid h2 { max-width: 620px; font-family: var(--font-display), serif; font-size: clamp(34px, 4vw, 48px); font-weight: 400; line-height: 1.08; letter-spacing: -0.035em; }
 .assessment-grid > div:first-child > p:not(.eyebrow) { max-width: 620px; margin: 26px 0 34px; color: var(--smoke); }
 .pill-button.light { background: var(--paper); color: var(--ink); box-shadow: none; }
 .assessment-card { padding: 34px; border: 1px solid color-mix(in srgb, var(--paper) 14%, transparent); border-radius: var(--radius-xl); background: color-mix(in srgb, var(--paper) 6%, transparent); }
@@ -199,7 +199,7 @@ h3, p { margin-top: 0; }
 
 .final-cta { padding: 40px 0 96px; background: var(--paper); }
 .final-card { position: relative; overflow: hidden; display: flex; align-items: end; justify-content: space-between; gap: 60px; padding: 64px; border-radius: var(--radius-xl); background: var(--sienna); color: var(--paper); }
-.final-card h2 { max-width: 720px; font-size: clamp(44px, 5vw, 64px); line-height: 1.05; }
+.final-card h2 { max-width: 720px; font-family: var(--font-display), serif; font-size: clamp(34px, 4vw, 48px); font-weight: 400; line-height: 1.08; letter-spacing: -0.035em; }
 .final-card p:not(.eyebrow) { max-width: 630px; margin: 20px 0 0; color: var(--peach); }
 .final-icon { position: absolute; right: 26%; top: -18px; width: 150px; height: 150px; color: color-mix(in srgb, var(--peach) 11%, transparent); transform: rotate(-18deg); }
 
@@ -362,7 +362,7 @@ h3, p { margin-top: 0; }
   .hero-orbit { width: 48px; height: 48px; }
   .section-heading.wide, .split-feature, .assessment-grid, .why-grid, .real-life-grid, .faq-grid, .product-detail-grid, .checkout-grid, .reviews-grid, .learning-books, .learning-book-section .learning-books, .learn-category-grid, .course-cta, .topik-registration-options, .topik-pdf-grid { grid-template-columns: 1fr; }
   .section-heading.wide, .split-feature, .assessment-grid, .why-grid, .real-life-grid, .faq-grid, .product-detail-grid { gap: 42px; }
-  .section-heading h2, .feature-copy h2, .why-intro h2, .faq-grid > div > h2 { font-size: 42px; }
+  .section-heading h2, .feature-copy h2, .why-intro h2, .faq-grid > div > h2 { font-size: 34px; }
   .category-grid { grid-template-columns: 1fr; }
   .category-card { min-height: 230px; }
   .dialogue-board { padding: 22px; }
@@ -375,13 +375,13 @@ h3, p { margin-top: 0; }
   .product-info h3, .product-info h2 { font-size: 17px; }
   .product-info p { display: none; }
   .assessment-grid { gap: 50px; }
-  .assessment-grid h2 { font-size: 44px; }
+  .assessment-grid h2 { font-size: 34px; }
   .why-intro { position: static; }
   .window-card { min-height: 350px; }
   .faq-grid { gap: 28px; }
   .final-cta { padding-bottom: 72px; }
   .final-card { align-items: start; flex-direction: column; padding: 38px 26px; }
-  .final-card h2 { font-size: 42px; }
+  .final-card h2 { font-size: 34px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 42px 30px; }
   .footer-grid > div:first-child { grid-column: 1 / -1; }
   .course-cta > div:last-child { justify-items: start; }
