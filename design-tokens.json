@@ -50,9 +50,8 @@
   },
   "typography": {
     "families": {
-      "display": "Noto Serif",
-      "body": "Noto Sans",
-      "mono": "Geist Mono"
+      "display": "Noto Serif KR",
+      "body": "Noto Sans KR"
     },
     "scale": {
       "caption": { "size": "12px", "lineHeight": "1.4" },
