@@ -72,7 +72,7 @@ export async function HomePage({ locale }: { locale: string }) {
         </div>
       </section>
 
-      <section className="section assessment-section">
+      <section id="learning-style" className="section assessment-section">
         <div className="shell assessment-grid">
           <Reveal><p className="eyebrow peach">{t("assessmentEyebrow")}</p><h2>{t("assessmentTitle")}</h2><p>{t("assessmentText")}</p><Link href="/learn" className="pill-button light">{t("assessmentCta")}<ArrowRight /></Link></Reveal>
           <Reveal delay={0.1} className="assessment-card"><div className="assessment-time"><span>15-20</span><small>{common("minutes")}</small></div>{(t.raw("assessmentPoints") as string[]).map((point) => <p key={point}><Check />{point}</p>)}</Reveal>
@@ -102,7 +102,7 @@ export async function HomePage({ locale }: { locale: string }) {
 
       <section id="faq" className="section paper-section"><div className="shell faq-grid"><Reveal><h2>{t("faqTitle")}</h2></Reveal><Reveal><FaqAccordion items={faqs} /></Reveal></div></section>
 
-      <section className="final-cta"><div className="shell"><Reveal><div className="final-card"><div><p className="eyebrow peach">LEARNMINEA</p><h2>{t("finalTitle")}</h2><p>{t("finalText")}</p></div><Link href="/learn" className="pill-button light">{t("finalCta")}<ArrowRight /></Link><Download className="final-icon" aria-hidden="true" /></div></Reveal></div></section>
+      <section className="final-cta"><div className="shell"><Reveal><div className="final-card"><div><p className="eyebrow peach">LEARNMINEA</p><h2>{t("finalTitle")}</h2><p>{t("finalText")}</p></div><Link href="#learning-style" className="pill-button light">{t("finalCta")}<ArrowRight /></Link><Download className="final-icon" aria-hidden="true" /></div></Reveal></div></section>
     </>
   );
 }
