@@ -10,7 +10,7 @@
     "searchAction": "Хайх",
     "artifacts": ["오늘 뭐 해요?", "-고 싶어요", "TOPIK II", "진짜?"],
     "exploreEyebrow": "ЭХЛЭХ ХЭСЭГ",
-    "exploreTitle": "Өөрийнхөөрөө эхэл",
+    "exploreTitle": "Өнөөдөр юу сурах вэ?",
     "exploreText": "Өнөөдөр танд хэрэгтэй нэг жижиг сэдвээс эхлээд тогтвортой урагшлаарай.",
     "categories": [
       { "title": "Үгийн сан", "text": "Өдөр тутамд хамгийн түрүүнд хэрэглэх үгс", "href": "/learn/vocabulary", "mark": "가" },
