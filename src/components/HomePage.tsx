@@ -1,11 +1,11 @@
-import { ArrowRight, Check, Download, Headphones, MessageCircle, Play, Sparkles } from "lucide-react";
+import { ArrowRight, Check, Download, Headphones, Sparkles } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getCmsPages, getCmsPosts } from "@/lib/cms";
 import { Reveal } from "@/components/motion/Reveal";
 import { FaqAccordion, type FaqItem } from "@/components/FaqAccordion";
 import { SearchComposer } from "@/components/SearchComposer";
-import { PronunciationButton } from "@/components/PronunciationButton";
+import { DialogueBoard } from "@/components/DialogueBoard";
 
 type Category = { title: string; text: string; href: string; mark: string };
 export type Product = { slug: string; title: string; tag: string; price: string; note: string };
@@ -57,8 +57,7 @@ export async function HomePage({ locale }: { locale: string }) {
       <section className="section fog-section">
         <div className="shell split-feature">
           <Reveal className="dialogue-board">
-            <div className="dialogue-top"><span>{t("dialogueLabel")}</span><button type="button" aria-label="Play"><Play /></button></div>
-            <div className="dialogue-line"><p className="hangul">{t("dialogueKo")}</p><PronunciationButton text={t("dialogueKo")} label={t("dialogueListen")} /></div><p className="meaning">{t("dialogueMeaning")}</p><div className="lesson-note"><MessageCircle /><p>{t("dialogueNote")}</p></div>
+            <DialogueBoard label={t("dialogueLabel")} ko={t("dialogueKo")} meaning={t("dialogueMeaning")} note={t("dialogueNote")} listenLabel={t("dialogueListen")} />
           </Reveal>
           <Reveal delay={0.1} className="feature-copy"><p className="eyebrow dark">{t("practicalEyebrow")}</p><h2>{t("practicalTitle")}</h2><p>{t("practicalText")}</p><Link href="/learn/conversation" className="text-link">{common("explore")}<ArrowRight /></Link></Reveal>
         </div>

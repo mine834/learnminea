@@ -120,11 +120,7 @@ h3, p { margin-top: 0; }
 .dialogue-top { display: flex; align-items: center; justify-content: space-between; color: var(--slate); font-size: 13px; text-transform: uppercase; letter-spacing: .1em; }
 .dialogue-top button { width: 48px; height: 48px; display: grid; place-items: center; border: 0; border-radius: 50%; background: var(--surf); color: var(--paper); }
 .dialogue-top svg { width: 18px; fill: currentColor; }
-.dialogue-line { display: flex; align-items: center; gap: 14px; margin: 46px 0 12px; }
 .hangul { margin: 46px 0 12px; font-family: var(--font-display), serif; font-size: clamp(30px, 4vw, 46px); line-height: 1.2; }
-.dialogue-line .hangul { margin: 0; }
-.pronunciation-button { width: 48px; height: 48px; flex: 0 0 auto; display: grid; place-items: center; border: 0; border-radius: 50%; background: var(--surf); color: var(--paper); cursor: pointer; box-shadow: var(--shadow-button); }
-.pronunciation-button svg { width: 19px; }
 .meaning { color: var(--slate); font-size: 18px; }
 .lesson-note { display: flex; gap: 14px; margin-top: 32px; padding: 20px; border-radius: var(--radius-md); background: var(--peach); color: var(--sienna); }
 .lesson-note svg { flex: 0 0 auto; width: 20px; }
@@ -366,9 +362,7 @@ h3, p { margin-top: 0; }
   .category-grid { grid-template-columns: 1fr; }
   .category-card { min-height: 230px; }
   .dialogue-board { padding: 22px; }
-  .dialogue-line { margin-top: 32px; }
   .hangul { margin-top: 32px; font-size: 30px; }
-  .dialogue-line .hangul { margin: 0; }
   .product-grid { grid-template-columns: repeat(2, 1fr); gap: 16px 10px; }
   .book-cover { padding: 18px 14px; }
   .book-cover strong { font-size: 20px; }
