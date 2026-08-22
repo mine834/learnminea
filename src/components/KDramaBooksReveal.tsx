@@ -12,10 +12,6 @@ export function KDramaBooksReveal({ teaser, books, booksTitle, digital }: { teas
 
   return (
     <>
-      <div className="kdrama-teaser">
-        <strong>{teaser.example}</strong>
-        <p>{teaser.text}</p>
-      </div>
       <div className="kdrama-teaser-actions"><button type="button" className="pill-button" onClick={() => setIsOpen(true)}>{teaser.cta}<ArrowRight /></button></div>
       {isOpen ? <div id="kdrama-books" className="learning-book-section"><h2>{booksTitle}</h2><div className="learning-books">{books.map((book, index) => <div key={`${book.title}-${book.level}`} className={`learning-book cover-${(index % 3) + 1}`}><BookOpen aria-hidden="true" /><span>{book.level}</span><h2>{book.title}</h2><p>{book.text}</p>{book.slug ? <Link href={`/shop/${book.slug}`} className="text-link">{digital}<ArrowRight /></Link> : <button type="button" className="text-link">{digital}<ArrowRight /></button>}</div>)}</div></div> : null}
     </>
